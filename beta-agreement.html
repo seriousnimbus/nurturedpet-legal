@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta Tester Agreement | NurturedPet</title>
+    <meta name="description" content="NurturedPet TestFlight Beta Tester Agreement - Join our community of early supporters.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --deep-teal: #0D6E6E;
+            --soft-coral: #FF8B7E;
+            --warm-purple: #9B6B9E;
+            --amber-glow: #F5A962;
+            --text-primary: #2D3748;
+            --text-secondary: #4A5568;
+            --bg-cream: #FDF8F5;
+            --bg-white: #FFFFFF;
+            --border-soft: #E8E0DC;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-cream);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--warm-purple) 0%, #7D5580 100%);
+            padding: 3rem 1.5rem;
+            text-align: center;
+            color: white;
+        }
+        
+        .header h1 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .header .last-updated {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem;
+        }
+        
+        .intro-card {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid var(--border-soft);
+        }
+        
+        .intro-card h2 {
+            font-family: 'Nunito', sans-serif;
+            color: var(--warm-purple);
+            margin-bottom: 1rem;
+        }
+        
+        .intro-card p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+        
+        section {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid var(--border-soft);
+        }
+        
+        h2 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--deep-teal);
+            margin-bottom: 1.25rem;
+        }
+        
+        h3 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 1.5rem 0 0.75rem 0;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+        
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: var(--text-secondary);
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(155,107,158,0.1) 0%, rgba(13,110,110,0.1) 100%);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin: 1rem 0;
+            border-left: 4px solid var(--warm-purple);
+        }
+        
+        .highlight-box.beta {
+            background: linear-gradient(135deg, rgba(245,169,98,0.12) 0%, rgba(255,139,126,0.1) 100%);
+            border-left-color: var(--amber-glow);
+        }
+        
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .benefit-card {
+            background: var(--bg-cream);
+            border-radius: 12px;
+            padding: 1.25rem;
+            text-align: center;
+        }
+        
+        .benefit-card .emoji {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .benefit-card h4 {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+        
+        .benefit-card p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            color: var(--text-secondary);
+        }
+        
+        .footer .logo {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            color: var(--deep-teal);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-link {
+            color: var(--deep-teal);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            section, .intro-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <span class="badge">🧪 TestFlight Beta</span>
+        <h1>Beta Tester Agreement</h1>
+        <p class="last-updated">Effective: January 11, 2026</p>
+    </header>
+    
+    <main class="container">
+        <div class="intro-card">
+            <h2>Welcome to the NurturedPet Beta! 🎉</h2>
+            <p>Thank you for joining our community of early supporters. You're helping us build something special for pet caregivers everywhere. This agreement outlines what you can expect as a beta tester and what we ask in return.</p>
+        </div>
+        
+        <section>
+            <h2>🤝 1. About This Agreement</h2>
+            <p>This Beta Tester Agreement ("Agreement") is between you ("Tester," "you") and NurturedPet ("we," "us," "our") regarding your participation in the NurturedPet beta testing program via Apple TestFlight.</p>
+            <p>By accepting the TestFlight invitation and using the beta version of NurturedPet, you agree to the terms below.</p>
+            <div class="highlight-box">
+                <p><strong>Note:</strong> This Agreement supplements our standard <a href="/terms" class="contact-link">Terms of Service</a> and <a href="/privacy" class="contact-link">Privacy Policy</a>, which also apply to your use of the beta App.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>🎯 2. Purpose of the Beta</h2>
+            <p>The beta program helps us:</p>
+            <ul>
+                <li>Identify bugs and issues before public release</li>
+                <li>Gather feedback on features and user experience</li>
+                <li>Ensure the app works well across different devices and use cases</li>
+                <li>Refine our compassionate approach to pet care support</li>
+            </ul>
+            <p>Your participation directly shapes the final product that will help pet caregivers worldwide.</p>
+        </section>
+        
+        <section>
+            <h2>✨ 3. Beta Tester Benefits</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="emoji">🆓</div>
+                    <h4>Free Access</h4>
+                    <p>All features free during beta period</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="emoji">🎁</div>
+                    <h4>Founding Member</h4>
+                    <p>Recognition as an early supporter</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="emoji">🎤</div>
+                    <h4>Direct Input</h4>
+                    <p>Your feedback shapes the product</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="emoji">❤️</div>
+                    <h4>Early Perks</h4>
+                    <p>Potential discounts at launch</p>
+                </div>
+            </div>
+            
+            <p><em>Note: Specific benefits may vary and are provided at our discretion.</em></p>
+        </section>
+        
+        <section>
+            <h2>📋 4. Your Responsibilities</h2>
+            
+            <h3>4.1 Provide Feedback</h3>
+            <p>We encourage (but don't require) you to:</p>
+            <ul>
+                <li>Report bugs and issues you encounter</li>
+                <li>Share your thoughts on features and usability</li>
+                <li>Respond to surveys or feedback requests</li>
+                <li>Suggest improvements based on your caregiving needs</li>
+            </ul>
+            
+            <h3>4.2 Use Responsibly</h3>
+            <p>You agree to:</p>
+            <ul>
+                <li>Use the beta App for its intended purpose (pet care management)</li>
+                <li>Keep the App updated to the latest TestFlight version</li>
+                <li>Not rely solely on the beta App for critical medication reminders (have backup systems during testing)</li>
+                <li>Report any data loss or serious issues promptly</li>
+            </ul>
+            
+            <h3>4.3 Maintain Confidentiality</h3>
+            <p>During the beta period, you agree to:</p>
+            <ul>
+                <li>Not publicly share screenshots, videos, or details about unreleased features</li>
+                <li>Not discuss non-public information about the App on social media or forums</li>
+                <li>Not share your TestFlight invitation with others without permission</li>
+            </ul>
+            <p><em>Exception: You may share feedback directly with us and discuss the general existence of the beta.</em></p>
+        </section>
+        
+        <section>
+            <h2>⚠️ 5. Beta Limitations & Risks</h2>
+            
+            <div class="highlight-box beta">
+                <p><strong>This is pre-release software.</strong> Please understand and accept the following:</p>
+            </div>
+            
+            <h3>5.1 Software May Be Unstable</h3>
+            <ul>
+                <li>The App may crash, freeze, or behave unexpectedly</li>
+                <li>Features may be incomplete, change, or be removed</li>
+                <li>Performance may vary</li>
+                <li>Compatibility issues may occur on some devices</li>
+            </ul>
+            
+            <h3>5.2 Data Risks</h3>
+            <ul>
+                <li><strong>Data loss may occur</strong> — always have backup records of important information</li>
+                <li>Data from beta may not transfer to the public release</li>
+                <li>We may reset or clear beta data at any time</li>
+            </ul>
+            
+            <h3>5.3 Not for Critical Use</h3>
+            <p><strong>Do NOT rely solely on the beta for critical medication reminders.</strong> During testing, maintain backup systems (written notes, other apps, manual alarms) for essential pet medications.</p>
+            
+            <h3>5.4 No Guarantee of Service</h3>
+            <ul>
+                <li>Beta access may be suspended or revoked at any time</li>
+                <li>Features may not be available in the final product</li>
+                <li>The beta period may end without notice</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>🔒 6. Confidentiality & Intellectual Property</h2>
+            
+            <h3>6.1 Confidential Information</h3>
+            <p>You acknowledge that the beta App and related materials contain confidential information, including:</p>
+            <ul>
+                <li>Unreleased features and functionality</li>
+                <li>App design and user interface elements</li>
+                <li>Technical implementations</li>
+                <li>Business strategies discussed in beta communications</li>
+            </ul>
+            
+            <h3>6.2 Ownership</h3>
+            <p>All intellectual property rights in the App remain with NurturedPet. Participation in the beta does not grant you any ownership or license rights beyond personal use during testing.</p>
+            
+            <h3>6.3 Feedback Rights</h3>
+            <p>Any feedback, suggestions, or ideas you provide may be used by NurturedPet without compensation or obligation to you. You grant us a perpetual, royalty-free license to use such feedback.</p>
+        </section>
+        
+        <section>
+            <h2>⚖️ 7. Disclaimers & Liability</h2>
+            
+            <h3>7.1 "As Is" Software</h3>
+            <p>THE BETA APP IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND. We make no guarantees about reliability, accuracy, or fitness for any purpose.</p>
+            
+            <h3>7.2 Medical Disclaimer</h3>
+            <p>The beta App is NOT a substitute for professional veterinary care. See our full <a href="/terms#medical" class="contact-link">Medical Disclaimer</a> in the Terms of Service.</p>
+            
+            <h3>7.3 Limitation of Liability</h3>
+            <p>To the maximum extent permitted by law, NurturedPet shall not be liable for any damages arising from your use of the beta, including but not limited to:</p>
+            <ul>
+                <li>Data loss or corruption</li>
+                <li>Missed medication reminders</li>
+                <li>Any pet health outcomes</li>
+                <li>Device issues or crashes</li>
+                <li>Loss of time or productivity</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>🚪 8. Termination</h2>
+            
+            <h3>8.1 Your Right to Leave</h3>
+            <p>You may stop participating at any time by:</p>
+            <ul>
+                <li>Deleting the App from your device</li>
+                <li>Removing yourself from the TestFlight beta</li>
+                <li>Contacting us to request removal</li>
+            </ul>
+            
+            <h3>8.2 Our Right to Remove</h3>
+            <p>We may remove you from the beta at any time, for any reason, including:</p>
+            <ul>
+                <li>Violation of this Agreement</li>
+                <li>Sharing confidential information</li>
+                <li>Abusive behavior toward our team</li>
+                <li>Inactivity in the beta program</li>
+                <li>End of the beta period</li>
+            </ul>
+            
+            <h3>8.3 After Termination</h3>
+            <p>Upon termination, your access to the beta will end. Confidentiality obligations continue after termination.</p>
+        </section>
+        
+        <section>
+            <h2>📬 9. Communication</h2>
+            <p>As a beta tester, you may receive:</p>
+            <ul>
+                <li>Update notifications about new beta versions</li>
+                <li>Surveys and feedback requests</li>
+                <li>Important announcements about the beta program</li>
+            </ul>
+            <p>You can provide feedback via:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:beta@nurturedpet.com" class="contact-link">beta@nurturedpet.com</a></li>
+                <li><strong>TestFlight:</strong> Use the built-in feedback feature (shake to report)</li>
+                <li><strong>Surveys:</strong> Respond to feedback forms we send</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>📝 10. Agreement Updates</h2>
+            <p>We may update this Agreement during the beta period. We'll notify you of significant changes. Continued participation after changes indicates acceptance.</p>
+        </section>
+        
+        <section>
+            <h2>💜 Thank You!</h2>
+            <p>We're genuinely grateful you're here. Beta testing is hard work, and your effort directly helps other pet caregivers who will use NurturedPet in the future.</p>
+            <p>You're not just testing software — you're part of a mission to make pet caregiving feel less lonely and less overwhelming.</p>
+            <div class="highlight-box">
+                <p><strong>Questions?</strong> Reach out anytime at <a href="mailto:beta@nurturedpet.com" class="contact-link">beta@nurturedpet.com</a>. We read every message.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p class="logo">🐾 NurturedPet</p>
+        <p>Built with love for Ace &amp; Queen</p>
+        <p>© 2026 NurturedPet. All rights reserved.</p>
+    </footer>
+</body>
+</html>

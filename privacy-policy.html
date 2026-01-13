@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | NurturedPet</title>
+    <meta name="description" content="NurturedPet Privacy Policy - How we handle your pet's care data with compassion and security.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --deep-teal: #0D6E6E;
+            --soft-coral: #FF8B7E;
+            --warm-purple: #9B6B9E;
+            --amber-glow: #F5A962;
+            --text-primary: #2D3748;
+            --text-secondary: #4A5568;
+            --bg-cream: #FDF8F5;
+            --bg-white: #FFFFFF;
+            --border-soft: #E8E0DC;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-cream);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--deep-teal) 0%, #0A5858 100%);
+            padding: 3rem 1.5rem;
+            text-align: center;
+            color: white;
+        }
+        
+        .header h1 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header .emoji {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .header .last-updated {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem;
+        }
+        
+        .intro-card {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid var(--border-soft);
+        }
+        
+        .intro-card p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+        
+        .intro-card .heart {
+            color: var(--warm-purple);
+        }
+        
+        section {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid var(--border-soft);
+        }
+        
+        h2 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--deep-teal);
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        h3 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 1.5rem 0 0.75rem 0;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+        
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: var(--text-secondary);
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+        }
+        
+        .data-table th {
+            background: var(--bg-cream);
+            padding: 0.75rem 1rem;
+            text-align: left;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--deep-teal);
+        }
+        
+        .data-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border-soft);
+            vertical-align: top;
+        }
+        
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(13,110,110,0.08) 0%, rgba(155,107,158,0.08) 100%);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin: 1rem 0;
+            border-left: 4px solid var(--deep-teal);
+        }
+        
+        .highlight-box.important {
+            background: linear-gradient(135deg, rgba(255,139,126,0.1) 0%, rgba(245,169,98,0.1) 100%);
+            border-left-color: var(--soft-coral);
+        }
+        
+        .highlight-box p {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            color: var(--text-secondary);
+        }
+        
+        .footer .logo {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            color: var(--deep-teal);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-link {
+            color: var(--deep-teal);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            section, .intro-card {
+                padding: 1.5rem;
+            }
+            
+            .data-table {
+                font-size: 0.85rem;
+            }
+            
+            .data-table th, .data-table td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <span class="emoji">🐾</span>
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: January 11, 2026</p>
+    </header>
+    
+    <main class="container">
+        <div class="intro-card">
+            <p>At NurturedPet, we believe caring for your pet is hard enough without worrying about your data. This policy explains how we handle your information with the same compassion we put into every part of our app. <span class="heart">💜</span></p>
+        </div>
+        
+        <section>
+            <h2>📱 1. Overview</h2>
+            <p>NurturedPet ("we," "us," or "our") provides a pet medication management and wellness tracking application for iOS. This Privacy Policy describes how we collect, use, disclose, and protect information when you use our mobile application ("App").</p>
+            <p>By using NurturedPet, you agree to the collection and use of information in accordance with this policy. If you do not agree with our practices, please do not use our App.</p>
+        </section>
+        
+        <section>
+            <h2>🗂️ 2. Information We Collect</h2>
+            
+            <h3>2.1 Information You Provide</h3>
+            <p>When you use NurturedPet, you may provide us with:</p>
+            
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Examples</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Pet Information</strong></td>
+                        <td>Name, species, breed, age, weight, photo, health conditions, allergies</td>
+                        <td>Personalize care tracking and AI recommendations</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Medication Data</strong></td>
+                        <td>Medication names, dosages, schedules, prescribing veterinarian</td>
+                        <td>Medication tracking, reminders, and schedule management</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Health Logs</strong></td>
+                        <td>Sleeping respiratory rate (SRR), wellness assessments, digestive tracking, notes</td>
+                        <td>Health monitoring and pattern detection</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Vaccination Records</strong></td>
+                        <td>Vaccine types, dates, proof documents (photos/PDFs)</td>
+                        <td>Record keeping and Care Passport sharing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>User Preferences</strong></td>
+                        <td>Notification settings, app preferences, accessibility options</td>
+                        <td>Customize your experience</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>2.2 Information Collected Automatically</h3>
+            <p>We may automatically collect certain information when you use the App:</p>
+            <ul>
+                <li><strong>Device Information:</strong> Device type, operating system version, unique device identifiers (for push notifications only)</li>
+                <li><strong>Usage Data:</strong> App feature usage, interaction patterns, crash reports</li>
+                <li><strong>Log Data:</strong> Access times, app version, and error logs to improve stability</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <p><strong>🔒 Privacy-First Design:</strong> We do not collect or store your location data, contacts, browsing history, or any information unrelated to pet care.</p>
+            </div>
+            
+            <h3>2.3 Voice and Microphone Data</h3>
+            <p>If you use our Voice Companion feature:</p>
+            <ul>
+                <li>Voice recordings are processed on your device using Apple's Speech Recognition framework</li>
+                <li><strong>Voice recordings are never stored</strong> — they are processed in real-time and immediately discarded</li>
+                <li>Transcribed text may be sent to our AI service to generate responses, then cleared from memory</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>🤖 3. AI Care Companion & Third-Party Services</h2>
+            
+            <h3>3.1 AI-Powered Features</h3>
+            <p>NurturedPet includes an AI Care Companion powered by Anthropic's Claude API. When you interact with the AI:</p>
+            <ul>
+                <li><strong>What We Send:</strong> Your pet's name, species, breed, health conditions, current medications, and the context of your conversation</li>
+                <li><strong>Why:</strong> To provide personalized, compassionate guidance about your pet's care</li>
+                <li><strong>Data Retention:</strong> Anthropic does not use your data to train their models and does not retain it beyond processing your request</li>
+            </ul>
+            
+            <div class="highlight-box important">
+                <p><strong>⚠️ Important:</strong> AI responses are informational only and not a substitute for professional veterinary care. See our Medical Disclaimer for details.</p>
+            </div>
+            
+            <h3>3.2 Other Third-Party Services</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Purpose</th>
+                        <th>Data Shared</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Apple Push Notification Service</td>
+                        <td>Medication reminders</td>
+                        <td>Device token only</td>
+                    </tr>
+                    <tr>
+                        <td>Apple iCloud</td>
+                        <td>Optional data sync</td>
+                        <td>Your encrypted app data (if enabled)</td>
+                    </tr>
+                    <tr>
+                        <td>App Store Connect / TestFlight</td>
+                        <td>App distribution, crash reports</td>
+                        <td>Anonymous crash data, device info</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section>
+            <h2>💾 4. How We Store Your Data</h2>
+            
+            <h3>4.1 Local-First Architecture</h3>
+            <p>NurturedPet is designed with privacy at its core:</p>
+            <ul>
+                <li><strong>Primary Storage:</strong> All your data is stored locally on your device using Apple's SwiftData framework</li>
+                <li><strong>No Account Required:</strong> You can use NurturedPet without creating an account or providing personal identifying information</li>
+                <li><strong>You Control Your Data:</strong> Your pet care data never leaves your device unless you explicitly choose to sync or share it</li>
+            </ul>
+            
+            <h3>4.2 Optional iCloud Sync</h3>
+            <p>If you enable iCloud sync:</p>
+            <ul>
+                <li>Your data is encrypted and stored in your personal iCloud account</li>
+                <li>We cannot access your iCloud data — it belongs to you</li>
+                <li>Sync can be disabled at any time in Settings</li>
+                <li>Disabling sync does not delete your local data</li>
+            </ul>
+            
+            <h3>4.3 Data Security</h3>
+            <p>We implement industry-standard security measures:</p>
+            <ul>
+                <li>Local data is protected by iOS device encryption</li>
+                <li>All network communications use TLS/HTTPS encryption</li>
+                <li>API keys and sensitive credentials are securely managed</li>
+                <li>We do not store payment information (handled by Apple)</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>📤 5. How We Use Your Information</h2>
+            <p>We use the information we collect to:</p>
+            <ul>
+                <li><strong>Provide Core Services:</strong> Medication tracking, reminders, scheduling, and health monitoring</li>
+                <li><strong>Power AI Features:</strong> Generate personalized insights and responses through the Care Companion</li>
+                <li><strong>Send Notifications:</strong> Medication reminders, check-ins, and (optionally) encouragement messages</li>
+                <li><strong>Improve the App:</strong> Analyze anonymous usage patterns to enhance features and fix bugs</li>
+                <li><strong>Provide Support:</strong> Respond to your questions and help resolve issues</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <p><strong>🚫 What We Never Do:</strong> We never sell your data. We never use your pet's health information for advertising. We never share identifiable information with third parties for marketing purposes.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>🤝 6. Information Sharing</h2>
+            
+            <h3>6.1 Sharing You Control</h3>
+            <p>NurturedPet lets you share your pet's information when <em>you</em> choose:</p>
+            <ul>
+                <li><strong>Care Passport:</strong> Generate shareable cards for groomers, boarding facilities, pet sitters, or veterinarians</li>
+                <li><strong>Export Features:</strong> Create PDF reports to share with your veterinarian</li>
+                <li><strong>Screenshots/Exports:</strong> Any sharing you initiate through iOS share sheets</li>
+            </ul>
+            <p>We do not share your information without your explicit action.</p>
+            
+            <h3>6.2 Limited Disclosures</h3>
+            <p>We may disclose information in these limited circumstances:</p>
+            <ul>
+                <li><strong>Legal Requirements:</strong> If required by law, court order, or government request</li>
+                <li><strong>Safety:</strong> To protect the rights, safety, or property of NurturedPet, our users, or the public</li>
+                <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets (you would be notified)</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>🎛️ 7. Your Rights and Choices</h2>
+            
+            <h3>7.1 Access and Control</h3>
+            <p>You have full control over your data:</p>
+            <ul>
+                <li><strong>Access:</strong> View all your stored data within the App</li>
+                <li><strong>Edit:</strong> Update or correct any information at any time</li>
+                <li><strong>Delete:</strong> Remove individual records or all data entirely</li>
+                <li><strong>Export:</strong> Generate reports and exports of your data</li>
+            </ul>
+            
+            <h3>7.2 Notification Preferences</h3>
+            <p>You can customize or disable:</p>
+            <ul>
+                <li>Medication reminder notifications</li>
+                <li>Check-in prompts</li>
+                <li>Encouragement messages</li>
+                <li>All push notifications (via iOS Settings)</li>
+            </ul>
+            
+            <h3>7.3 Data Deletion</h3>
+            <p>To delete all your data:</p>
+            <ol>
+                <li>Go to Settings within the App</li>
+                <li>Select "Delete All Data"</li>
+                <li>Confirm your choice</li>
+            </ol>
+            <p>This action is immediate and irreversible. If you have iCloud sync enabled, data will also be removed from iCloud.</p>
+            
+            <h3>7.4 California Residents (CCPA)</h3>
+            <p>California residents have additional rights under the CCPA:</p>
+            <ul>
+                <li>Right to know what personal information we collect</li>
+                <li>Right to delete personal information</li>
+                <li>Right to opt-out of the sale of personal information (note: we do not sell personal information)</li>
+                <li>Right to non-discrimination for exercising your privacy rights</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>👶 8. Children's Privacy</h2>
+            <p>NurturedPet is designed for adult pet caregivers. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
+        </section>
+        
+        <section>
+            <h2>🌍 9. International Users</h2>
+            <p>NurturedPet is based in the United States. If you use the App from outside the US:</p>
+            <ul>
+                <li>Your data may be transferred to and processed in the United States</li>
+                <li>By using the App, you consent to this transfer</li>
+                <li>We process data in compliance with applicable laws</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>📝 10. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. When we make changes:</p>
+            <ul>
+                <li>We will update the "Last Updated" date at the top</li>
+                <li>For significant changes, we will notify you through the App or via push notification</li>
+                <li>Continued use of the App after changes constitutes acceptance of the updated policy</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>📬 11. Contact Us</h2>
+            <p>If you have questions about this Privacy Policy or our practices, we'd love to hear from you:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:privacy@nurturedpet.com" class="contact-link">privacy@nurturedpet.com</a></li>
+                <li><strong>Website:</strong> <a href="https://nurturedpet.com/contact" class="contact-link">nurturedpet.com/contact</a></li>
+            </ul>
+            <p>We aim to respond to all privacy inquiries within 30 days.</p>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p class="logo">🐾 NurturedPet</p>
+        <p>Built with love for Ace &amp; Queen</p>
+        <p>© 2026 NurturedPet. All rights reserved.</p>
+    </footer>
+</body>
+</html>

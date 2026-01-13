@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | NurturedPet</title>
+    <meta name="description" content="NurturedPet Terms of Service - The rules of the road for using our compassionate pet care app.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --deep-teal: #0D6E6E;
+            --soft-coral: #FF8B7E;
+            --warm-purple: #9B6B9E;
+            --amber-glow: #F5A962;
+            --text-primary: #2D3748;
+            --text-secondary: #4A5568;
+            --bg-cream: #FDF8F5;
+            --bg-white: #FFFFFF;
+            --border-soft: #E8E0DC;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-cream);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--deep-teal) 0%, #0A5858 100%);
+            padding: 3rem 1.5rem;
+            text-align: center;
+            color: white;
+        }
+        
+        .header h1 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header .emoji {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .header .last-updated {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem;
+        }
+        
+        .intro-card {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid var(--border-soft);
+        }
+        
+        .intro-card p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+        
+        .intro-card .heart {
+            color: var(--warm-purple);
+        }
+        
+        section {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid var(--border-soft);
+        }
+        
+        h2 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--deep-teal);
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        h3 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 1.5rem 0 0.75rem 0;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+        
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: var(--text-secondary);
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(13,110,110,0.08) 0%, rgba(155,107,158,0.08) 100%);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin: 1rem 0;
+            border-left: 4px solid var(--deep-teal);
+        }
+        
+        .highlight-box.important {
+            background: linear-gradient(135deg, rgba(255,139,126,0.1) 0%, rgba(245,169,98,0.1) 100%);
+            border-left-color: var(--soft-coral);
+        }
+        
+        .highlight-box.warning {
+            background: linear-gradient(135deg, rgba(245,169,98,0.12) 0%, rgba(255,139,126,0.12) 100%);
+            border-left-color: var(--amber-glow);
+        }
+        
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+        
+        .highlight-box p:not(:last-child) {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            color: var(--text-secondary);
+        }
+        
+        .footer .logo {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            color: var(--deep-teal);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-link {
+            color: var(--deep-teal);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+        
+        .toc {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid var(--border-soft);
+        }
+        
+        .toc h3 {
+            margin-top: 0;
+            color: var(--deep-teal);
+        }
+        
+        .toc ol {
+            column-count: 2;
+            column-gap: 2rem;
+        }
+        
+        .toc li {
+            margin-bottom: 0.35rem;
+        }
+        
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+        
+        .toc a:hover {
+            color: var(--deep-teal);
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            section, .intro-card, .toc {
+                padding: 1.5rem;
+            }
+            
+            .toc ol {
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <span class="emoji">📜</span>
+        <h1>Terms of Service</h1>
+        <p class="last-updated">Last Updated: January 11, 2026</p>
+    </header>
+    
+    <main class="container">
+        <div class="intro-card">
+            <p>Welcome to NurturedPet! These terms govern your use of our app. We've written them to be as clear and fair as possible—because legal jargon never helped anyone care for their pet. <span class="heart">💜</span></p>
+        </div>
+        
+        <nav class="toc">
+            <h3>Contents</h3>
+            <ol>
+                <li><a href="#acceptance">Acceptance of Terms</a></li>
+                <li><a href="#description">Description of Service</a></li>
+                <li><a href="#eligibility">Eligibility</a></li>
+                <li><a href="#account">Account & Data</a></li>
+                <li><a href="#acceptable">Acceptable Use</a></li>
+                <li><a href="#medical">Medical Disclaimer</a></li>
+                <li><a href="#ai">AI Features & Limitations</a></li>
+                <li><a href="#ip">Intellectual Property</a></li>
+                <li><a href="#user-content">User Content</a></li>
+                <li><a href="#subscriptions">Subscriptions & Payments</a></li>
+                <li><a href="#termination">Termination</a></li>
+                <li><a href="#disclaimers">Disclaimers</a></li>
+                <li><a href="#liability">Limitation of Liability</a></li>
+                <li><a href="#indemnification">Indemnification</a></li>
+                <li><a href="#governing">Governing Law</a></li>
+                <li><a href="#changes">Changes to Terms</a></li>
+                <li><a href="#contact">Contact Information</a></li>
+            </ol>
+        </nav>
+        
+        <section id="acceptance">
+            <h2>📋 1. Acceptance of Terms</h2>
+            <p>By downloading, installing, or using NurturedPet ("App," "Service," "we," "us," or "our"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+            <p>These Terms constitute a legally binding agreement between you ("User," "you," or "your") and NurturedPet regarding your use of our Service.</p>
+            <div class="highlight-box">
+                <p><strong>Plain English:</strong> Using our app means you agree to these rules. They're designed to protect both you and us.</p>
+            </div>
+        </section>
+        
+        <section id="description">
+            <h2>🐾 2. Description of Service</h2>
+            <p>NurturedPet is a pet medication management and wellness tracking application that provides:</p>
+            <ul>
+                <li>Medication scheduling, tracking, and reminders</li>
+                <li>Health monitoring tools (including respiratory rate tracking, wellness assessments)</li>
+                <li>AI-powered Care Companion for pet care guidance</li>
+                <li>Vaccination record management</li>
+                <li>Care Passport sharing features</li>
+                <li>Caregiver support and wellness features</li>
+            </ul>
+            <p>The Service is intended to assist pet caregivers in managing their pet's health routines. It is <strong>not</strong> a substitute for professional veterinary care.</p>
+        </section>
+        
+        <section id="eligibility">
+            <h2>✅ 3. Eligibility</h2>
+            <p>To use NurturedPet, you must:</p>
+            <ul>
+                <li>Be at least 18 years of age (or the age of majority in your jurisdiction)</li>
+                <li>Have the legal capacity to enter into a binding agreement</li>
+                <li>Not be prohibited from using the Service under applicable laws</li>
+            </ul>
+            <p>If you are using the App on behalf of an organization, you represent that you have authority to bind that organization to these Terms.</p>
+        </section>
+        
+        <section id="account">
+            <h2>👤 4. Account & Data</h2>
+            
+            <h3>4.1 No Account Required</h3>
+            <p>NurturedPet does not require you to create an account. Your data is stored locally on your device by default.</p>
+            
+            <h3>4.2 iCloud Sync (Optional)</h3>
+            <p>If you enable iCloud sync, your data will be stored in your personal iCloud account, subject to Apple's terms and conditions. You are responsible for maintaining the security of your Apple ID.</p>
+            
+            <h3>4.3 Data Responsibility</h3>
+            <p>You are responsible for:</p>
+            <ul>
+                <li>The accuracy of information you enter</li>
+                <li>Backing up your data</li>
+                <li>Maintaining device security</li>
+                <li>Any activity that occurs through your use of the App</li>
+            </ul>
+        </section>
+        
+        <section id="acceptable">
+            <h2>🚦 5. Acceptable Use</h2>
+            
+            <h3>5.1 Permitted Uses</h3>
+            <p>You may use NurturedPet for its intended purpose: personal, non-commercial pet care management.</p>
+            
+            <h3>5.2 Prohibited Uses</h3>
+            <p>You agree NOT to:</p>
+            <ul>
+                <li>Use the Service for any unlawful purpose</li>
+                <li>Attempt to reverse engineer, decompile, or extract source code from the App</li>
+                <li>Interfere with or disrupt the Service or servers</li>
+                <li>Circumvent any security features or access restrictions</li>
+                <li>Use automated systems (bots, scrapers) to access the Service</li>
+                <li>Resell, redistribute, or commercially exploit the Service</li>
+                <li>Impersonate another person or entity</li>
+                <li>Upload malicious code or content</li>
+                <li>Use the AI features to generate harmful, abusive, or inappropriate content</li>
+                <li>Attempt to extract training data or system prompts from AI features</li>
+            </ul>
+        </section>
+        
+        <section id="medical">
+            <h2>⚕️ 6. Medical Disclaimer</h2>
+            
+            <div class="highlight-box important">
+                <p><strong>IMPORTANT: NurturedPet is NOT a substitute for professional veterinary care.</strong></p>
+                <p>The information provided by the App, including AI-generated responses, is for <em>informational and educational purposes only</em>.</p>
+            </div>
+            
+            <h3>6.1 Not Veterinary Advice</h3>
+            <p>NurturedPet does not provide veterinary medical advice, diagnosis, or treatment. The App's features, including:</p>
+            <ul>
+                <li>Medication tracking and reminders</li>
+                <li>AI Care Companion responses</li>
+                <li>Health monitoring tools</li>
+                <li>Pattern detection and insights</li>
+            </ul>
+            <p>are designed to <em>support</em> your caregiving, not replace professional veterinary judgment.</p>
+            
+            <h3>6.2 Always Consult a Veterinarian</h3>
+            <p>You should:</p>
+            <ul>
+                <li><strong>Always</strong> consult a licensed veterinarian for diagnosis and treatment</li>
+                <li><strong>Never</strong> delay seeking veterinary care based on App information</li>
+                <li><strong>Never</strong> change medications or dosages without veterinary guidance</li>
+                <li><strong>Immediately</strong> contact a veterinarian or emergency clinic if your pet shows signs of illness, distress, or adverse reactions</li>
+            </ul>
+            
+            <h3>6.3 Your Responsibility</h3>
+            <p>You acknowledge that:</p>
+            <ul>
+                <li>All medical decisions regarding your pet are your responsibility</li>
+                <li>The App cannot account for your pet's complete medical history</li>
+                <li>AI responses are generated from general knowledge, not your pet's specific medical records</li>
+                <li>Drug interactions, dosing, and side effect information may not be complete</li>
+            </ul>
+            
+            <div class="highlight-box warning">
+                <p><strong>🚨 Emergency:</strong> If your pet is experiencing a medical emergency, contact your veterinarian or nearest emergency animal hospital immediately. Do not rely on this App in emergency situations.</p>
+            </div>
+        </section>
+        
+        <section id="ai">
+            <h2>🤖 7. AI Features & Limitations</h2>
+            
+            <h3>7.1 AI Care Companion</h3>
+            <p>NurturedPet includes AI-powered features using third-party AI services (Anthropic Claude). When using these features:</p>
+            <ul>
+                <li>Pet context (name, species, medications, etc.) is sent to process your requests</li>
+                <li>AI responses are generated automatically and may contain errors</li>
+                <li>We do not guarantee the accuracy, completeness, or reliability of AI responses</li>
+                <li>AI features require an internet connection</li>
+            </ul>
+            
+            <h3>7.2 AI Limitations</h3>
+            <p>You acknowledge that AI features:</p>
+            <ul>
+                <li>May produce inaccurate or inappropriate responses</li>
+                <li>Should not be relied upon for medical decisions</li>
+                <li>Are not a substitute for professional advice</li>
+                <li>May be unavailable during service disruptions</li>
+                <li>May change or be modified at any time</li>
+            </ul>
+            
+            <h3>7.3 Acceptable AI Use</h3>
+            <p>You agree to use AI features only for their intended purpose (pet care support) and not to:</p>
+            <ul>
+                <li>Attempt to manipulate the AI to produce harmful content</li>
+                <li>Use AI outputs in ways that could harm others</li>
+                <li>Attempt to extract or reverse-engineer AI systems</li>
+            </ul>
+        </section>
+        
+        <section id="ip">
+            <h2>©️ 8. Intellectual Property</h2>
+            
+            <h3>8.1 Our Rights</h3>
+            <p>NurturedPet and its entire contents, features, and functionality (including software, text, displays, images, audio, and design) are owned by NurturedPet and protected by copyright, trademark, and other intellectual property laws.</p>
+            <p>The NurturedPet name, logo, "Care Companion," "Care Passport," and related marks are trademarks of NurturedPet.</p>
+            
+            <h3>8.2 Limited License</h3>
+            <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes in accordance with these Terms.</p>
+            
+            <h3>8.3 Restrictions</h3>
+            <p>You may not:</p>
+            <ul>
+                <li>Copy, modify, or distribute the App or its content</li>
+                <li>Use our trademarks without written permission</li>
+                <li>Remove any copyright or proprietary notices</li>
+                <li>Create derivative works based on the App</li>
+            </ul>
+        </section>
+        
+        <section id="user-content">
+            <h2>📝 9. User Content</h2>
+            
+            <h3>9.1 Your Content</h3>
+            <p>You retain ownership of content you create in the App, including pet profiles, notes, photos, and health logs ("User Content").</p>
+            
+            <h3>9.2 License to Us</h3>
+            <p>By using the App, you grant us a limited license to process your User Content solely to provide the Service (e.g., displaying your pet's information, processing AI requests). We do not claim ownership of your content.</p>
+            
+            <h3>9.3 Content Responsibility</h3>
+            <p>You are solely responsible for your User Content and represent that:</p>
+            <ul>
+                <li>You own or have rights to the content you upload</li>
+                <li>Your content does not infringe third-party rights</li>
+                <li>Your content does not violate any laws</li>
+            </ul>
+        </section>
+        
+        <section id="subscriptions">
+            <h2>💳 10. Subscriptions & Payments</h2>
+            
+            <h3>10.1 Free and Premium Tiers</h3>
+            <p>NurturedPet offers both free features and optional premium subscriptions ("NurturedPet Premium"). Core medication tracking features remain free.</p>
+            
+            <h3>10.2 Billing</h3>
+            <p>Premium subscriptions are billed through Apple's App Store. All payments are processed by Apple and subject to Apple's terms.</p>
+            <ul>
+                <li>Subscriptions automatically renew unless canceled 24 hours before the renewal date</li>
+                <li>You can manage subscriptions in your Apple ID settings</li>
+                <li>Prices may vary by region and are subject to change</li>
+            </ul>
+            
+            <h3>10.3 Refunds</h3>
+            <p>Refund requests must be made through Apple. We do not directly process refunds. Please visit <a href="https://reportaproblem.apple.com" class="contact-link" target="_blank">reportaproblem.apple.com</a> for App Store refund requests.</p>
+            
+            <h3>10.4 Free Trial</h3>
+            <p>We may offer free trials of Premium features. If you do not cancel before the trial ends, you will be charged the subscription fee.</p>
+        </section>
+        
+        <section id="termination">
+            <h2>🚪 11. Termination</h2>
+            
+            <h3>11.1 Your Right to Terminate</h3>
+            <p>You may stop using NurturedPet at any time by deleting the App. To delete your data, use the "Delete All Data" option in Settings before uninstalling.</p>
+            
+            <h3>11.2 Our Right to Terminate</h3>
+            <p>We may suspend or terminate your access to the Service if you:</p>
+            <ul>
+                <li>Violate these Terms</li>
+                <li>Engage in fraudulent or illegal activity</li>
+                <li>Abuse our systems or other users</li>
+                <li>For any other reason at our sole discretion</li>
+            </ul>
+            
+            <h3>11.3 Effect of Termination</h3>
+            <p>Upon termination:</p>
+            <ul>
+                <li>Your license to use the App ends immediately</li>
+                <li>Local data remains on your device unless you delete it</li>
+                <li>Active subscriptions may be canceled without refund for violations</li>
+                <li>Provisions that should survive termination (disclaimers, limitations, etc.) will remain in effect</li>
+            </ul>
+        </section>
+        
+        <section id="disclaimers">
+            <h2>⚠️ 12. Disclaimers</h2>
+            
+            <div class="highlight-box warning">
+                <p><strong>THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.</strong></p>
+            </div>
+            
+            <p>To the fullest extent permitted by law, we disclaim all warranties, including but not limited to:</p>
+            <ul>
+                <li>Implied warranties of merchantability, fitness for a particular purpose, and non-infringement</li>
+                <li>That the Service will be uninterrupted, secure, or error-free</li>
+                <li>That defects will be corrected</li>
+                <li>That the Service is free of viruses or harmful components</li>
+                <li>The accuracy, reliability, or completeness of any information</li>
+            </ul>
+            
+            <p>Some jurisdictions do not allow disclaimer of implied warranties, so some disclaimers may not apply to you.</p>
+        </section>
+        
+        <section id="liability">
+            <h2>⚖️ 13. Limitation of Liability</h2>
+            
+            <div class="highlight-box warning">
+                <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY LAW, NURTUREDPET SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, REVENUE, DATA, OR GOODWILL.</strong></p>
+            </div>
+            
+            <p>This includes, without limitation, damages arising from:</p>
+            <ul>
+                <li>Your use of or inability to use the Service</li>
+                <li>Any pet health outcomes, including illness, injury, or death</li>
+                <li>Errors or inaccuracies in content or AI responses</li>
+                <li>Unauthorized access to your data</li>
+                <li>Service interruptions or data loss</li>
+                <li>Any third-party conduct or content</li>
+            </ul>
+            
+            <p>Our total liability for any claims arising from these Terms or the Service shall not exceed the amount you paid us in the twelve (12) months preceding the claim, or $100, whichever is greater.</p>
+            
+            <p>Some jurisdictions do not allow limitations on liability, so some limitations may not apply to you.</p>
+        </section>
+        
+        <section id="indemnification">
+            <h2>🛡️ 14. Indemnification</h2>
+            <p>You agree to indemnify, defend, and hold harmless NurturedPet and its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including attorney's fees) arising from:</p>
+            <ul>
+                <li>Your use of the Service</li>
+                <li>Your violation of these Terms</li>
+                <li>Your violation of any third-party rights</li>
+                <li>Your User Content</li>
+            </ul>
+        </section>
+        
+        <section id="governing">
+            <h2>🏛️ 15. Governing Law & Disputes</h2>
+            
+            <h3>15.1 Governing Law</h3>
+            <p>These Terms shall be governed by and construed in accordance with the laws of the State of South Carolina, United States, without regard to conflict of law principles.</p>
+            
+            <h3>15.2 Dispute Resolution</h3>
+            <p>Any disputes arising from these Terms or the Service shall be resolved as follows:</p>
+            <ol>
+                <li><strong>Informal Resolution:</strong> We encourage you to contact us first to resolve any issues informally.</li>
+                <li><strong>Binding Arbitration:</strong> If informal resolution fails, disputes shall be resolved by binding arbitration under the rules of the American Arbitration Association.</li>
+                <li><strong>Class Action Waiver:</strong> You agree to resolve disputes individually and waive any right to participate in class actions.</li>
+            </ol>
+            
+            <h3>15.3 Exceptions</h3>
+            <p>Either party may seek injunctive relief in court for intellectual property violations or unauthorized access.</p>
+        </section>
+        
+        <section id="changes">
+            <h2>📝 16. Changes to Terms</h2>
+            <p>We may modify these Terms at any time. When we make changes:</p>
+            <ul>
+                <li>We will update the "Last Updated" date</li>
+                <li>For material changes, we will notify you through the App or via email</li>
+                <li>Continued use after changes constitutes acceptance</li>
+                <li>If you disagree with changes, you must stop using the Service</li>
+            </ul>
+        </section>
+        
+        <section id="miscellaneous">
+            <h2>📎 17. Miscellaneous</h2>
+            
+            <h3>17.1 Entire Agreement</h3>
+            <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and NurturedPet.</p>
+            
+            <h3>17.2 Severability</h3>
+            <p>If any provision is found unenforceable, the remaining provisions remain in effect.</p>
+            
+            <h3>17.3 Waiver</h3>
+            <p>Our failure to enforce any right does not waive that right.</p>
+            
+            <h3>17.4 Assignment</h3>
+            <p>You may not assign these Terms. We may assign our rights to any successor.</p>
+            
+            <h3>17.5 No Third-Party Beneficiaries</h3>
+            <p>These Terms do not create rights for any third party.</p>
+        </section>
+        
+        <section id="contact">
+            <h2>📬 18. Contact Information</h2>
+            <p>Questions about these Terms? We're here to help:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:legal@nurturedpet.com" class="contact-link">legal@nurturedpet.com</a></li>
+                <li><strong>Website:</strong> <a href="https://nurturedpet.com/contact" class="contact-link">nurturedpet.com/contact</a></li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p class="logo">🐾 NurturedPet</p>
+        <p>Built with love for Ace &amp; Queen</p>
+        <p>© 2026 NurturedPet. All rights reserved.</p>
+    </footer>
+</body>
+</html>

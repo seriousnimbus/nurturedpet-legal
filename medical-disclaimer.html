@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Disclaimer | NurturedPet</title>
+    <meta name="description" content="NurturedPet Medical Disclaimer - Important information about the limitations of our pet care app.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --deep-teal: #0D6E6E;
+            --soft-coral: #FF8B7E;
+            --warm-purple: #9B6B9E;
+            --amber-glow: #F5A962;
+            --text-primary: #2D3748;
+            --text-secondary: #4A5568;
+            --bg-cream: #FDF8F5;
+            --bg-white: #FFFFFF;
+            --border-soft: #E8E0DC;
+            --danger-red: #E53E3E;
+            --danger-light: #FED7D7;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-cream);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--soft-coral) 0%, #E57A6E 100%);
+            padding: 3rem 1.5rem;
+            text-align: center;
+            color: white;
+        }
+        
+        .header h1 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header .emoji {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .header .last-updated {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem;
+        }
+        
+        .critical-notice {
+            background: var(--danger-light);
+            border: 2px solid var(--danger-red);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+        
+        .critical-notice h2 {
+            font-family: 'Nunito', sans-serif;
+            color: var(--danger-red);
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        
+        .critical-notice p {
+            font-size: 1.15rem;
+            color: var(--text-primary);
+            margin-bottom: 0;
+        }
+        
+        section {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid var(--border-soft);
+        }
+        
+        h2 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--deep-teal);
+            margin-bottom: 1.25rem;
+        }
+        
+        h3 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 1.5rem 0 0.75rem 0;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+        
+        ul {
+            margin: 1rem 0 1rem 1.5rem;
+            color: var(--text-secondary);
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(13,110,110,0.08) 0%, rgba(155,107,158,0.08) 100%);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin: 1rem 0;
+            border-left: 4px solid var(--deep-teal);
+        }
+        
+        .highlight-box.warning {
+            background: linear-gradient(135deg, rgba(255,139,126,0.15) 0%, rgba(245,169,98,0.15) 100%);
+            border-left-color: var(--soft-coral);
+        }
+        
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+        
+        .emergency-box {
+            background: linear-gradient(135deg, #C53030 0%, #9B2C2C 100%);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            color: white;
+            text-align: center;
+        }
+        
+        .emergency-box h3 {
+            color: white;
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        
+        .emergency-box p {
+            color: rgba(255,255,255,0.95);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .emergency-box ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .emergency-box li {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            margin: 0.25rem;
+            color: white;
+        }
+        
+        .do-dont-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .do-card, .dont-card {
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+        
+        .do-card {
+            background: linear-gradient(135deg, rgba(56,161,105,0.1) 0%, rgba(72,187,120,0.1) 100%);
+            border: 1px solid rgba(56,161,105,0.3);
+        }
+        
+        .do-card h4 {
+            color: #276749;
+        }
+        
+        .dont-card {
+            background: linear-gradient(135deg, rgba(229,62,62,0.1) 0%, rgba(245,101,101,0.1) 100%);
+            border: 1px solid rgba(229,62,62,0.3);
+        }
+        
+        .dont-card h4 {
+            color: #C53030;
+        }
+        
+        .do-card h4, .dont-card h4 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.1rem;
+            margin: 0 0 0.75rem 0;
+        }
+        
+        .do-card ul, .dont-card ul {
+            margin: 0;
+            padding-left: 1.25rem;
+        }
+        
+        .do-card li, .dont-card li {
+            margin-bottom: 0.35rem;
+            font-size: 0.95rem;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            color: var(--text-secondary);
+        }
+        
+        .footer .logo {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            color: var(--deep-teal);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-link {
+            color: var(--deep-teal);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            section, .critical-notice {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <span class="emoji">⚕️</span>
+        <h1>Medical Disclaimer</h1>
+        <p class="last-updated">Last Updated: January 11, 2026</p>
+    </header>
+    
+    <main class="container">
+        <div class="critical-notice">
+            <h2>⚠️ Important Notice</h2>
+            <p><strong>NurturedPet is NOT a substitute for professional veterinary care.</strong><br>
+            Always consult a licensed veterinarian for your pet's health needs.</p>
+        </div>
+        
+        <section>
+            <h2>1. Purpose of NurturedPet</h2>
+            <p>NurturedPet is designed to <strong>support</strong> pet caregivers in managing their pet's medication schedules, health tracking, and wellness routines. The App provides:</p>
+            <ul>
+                <li>Medication reminders and scheduling tools</li>
+                <li>Health monitoring features (such as respiratory rate tracking)</li>
+                <li>Wellness assessments and logging</li>
+                <li>AI-powered informational guidance</li>
+                <li>Record-keeping and sharing capabilities</li>
+            </ul>
+            <div class="highlight-box">
+                <p>These features are intended to <strong>complement</strong> professional veterinary care, not replace it. Think of NurturedPet as a helpful assistant for your pet's care routine—not a veterinarian.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>2. What NurturedPet Does NOT Provide</h2>
+            <p>NurturedPet does <strong>not</strong> provide:</p>
+            <ul>
+                <li><strong>Veterinary Medical Advice:</strong> We cannot diagnose conditions, prescribe treatments, or provide medical opinions</li>
+                <li><strong>Medical Diagnosis:</strong> The App cannot determine what is wrong with your pet</li>
+                <li><strong>Treatment Plans:</strong> We do not create or modify treatment protocols</li>
+                <li><strong>Medication Prescriptions:</strong> We do not prescribe, recommend, or adjust medications or dosages</li>
+                <li><strong>Emergency Medical Care:</strong> The App cannot help in medical emergencies</li>
+            </ul>
+            <div class="highlight-box warning">
+                <p><strong>No information in NurturedPet should be interpreted as medical advice.</strong> All health-related information is for general educational purposes only.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>3. AI Care Companion Limitations</h2>
+            <p>NurturedPet includes an AI-powered Care Companion feature. It's important to understand its limitations:</p>
+            
+            <h3>What the AI Can Do</h3>
+            <ul>
+                <li>Provide general educational information about pet care</li>
+                <li>Offer emotional support and encouragement</li>
+                <li>Answer general questions about medications (based on publicly available information)</li>
+                <li>Help you track patterns and observations</li>
+            </ul>
+            
+            <h3>What the AI Cannot Do</h3>
+            <ul>
+                <li>Diagnose your pet's health condition</li>
+                <li>Recommend specific treatments or medications</li>
+                <li>Tell you whether your pet needs to see a vet</li>
+                <li>Replace a veterinarian's professional judgment</li>
+                <li>Access your pet's actual medical records from veterinary clinics</li>
+                <li>Guarantee accuracy of any medical or health information</li>
+            </ul>
+            
+            <div class="highlight-box warning">
+                <p><strong>AI responses may be incorrect, incomplete, or outdated.</strong> Always verify health information with a licensed veterinarian.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>4. Your Responsibility</h2>
+            <p>By using NurturedPet, you acknowledge and agree that:</p>
+            <ul>
+                <li><strong>You are responsible</strong> for all decisions regarding your pet's health and care</li>
+                <li><strong>You must verify</strong> any health information with qualified veterinary professionals</li>
+                <li><strong>You will not</strong> use NurturedPet as a replacement for veterinary consultations</li>
+                <li><strong>You understand</strong> that medication tracking tools don't replace professional dosing guidance</li>
+                <li><strong>You acknowledge</strong> the limitations of AI-generated responses</li>
+            </ul>
+            
+            <div class="do-dont-grid">
+                <div class="do-card">
+                    <h4>✅ DO</h4>
+                    <ul>
+                        <li>Use NurturedPet to support your caregiving routine</li>
+                        <li>Track medications as prescribed by your vet</li>
+                        <li>Bring App data to vet appointments</li>
+                        <li>Consult your vet for health concerns</li>
+                        <li>Have backup reminder systems in place</li>
+                    </ul>
+                </div>
+                <div class="dont-card">
+                    <h4>❌ DON'T</h4>
+                    <ul>
+                        <li>Use the App instead of vet visits</li>
+                        <li>Change dosages without vet approval</li>
+                        <li>Rely solely on AI for medical decisions</li>
+                        <li>Delay emergency care to check the App</li>
+                        <li>Assume AI responses are always accurate</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>5. When to Contact Your Veterinarian</h2>
+            <p>Always contact your veterinarian if your pet:</p>
+            <ul>
+                <li>Shows signs of illness, pain, or distress</li>
+                <li>Experiences changes in appetite, energy, or behavior</li>
+                <li>Has a bad reaction to medication</li>
+                <li>Misses multiple doses of medication</li>
+                <li>Shows breathing difficulties or changes in respiratory rate</li>
+                <li>Has any condition that concerns you</li>
+            </ul>
+            
+            <div class="emergency-box">
+                <h3>🚨 EMERGENCY SITUATIONS</h3>
+                <p>If your pet is experiencing a medical emergency, <strong>do not use this App</strong>. Instead:</p>
+                <ul>
+                    <li>Call your veterinarian immediately</li>
+                    <li>Contact the nearest emergency animal hospital</li>
+                    <li>Call ASPCA Animal Poison Control: 888-426-4435</li>
+                </ul>
+                <p style="margin-top: 1rem; margin-bottom: 0; font-weight: 600;">Every second counts in an emergency. Act immediately.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>6. Medication Tracking Disclaimer</h2>
+            <p>NurturedPet's medication tracking features help you stay organized, but:</p>
+            <ul>
+                <li><strong>Dosages and schedules</strong> should always be determined by your veterinarian</li>
+                <li><strong>Drug information</strong> in the App may not be complete or current</li>
+                <li><strong>Drug interactions</strong> shown are for awareness only—verify with your vet</li>
+                <li><strong>Side effect information</strong> may not include all possible reactions</li>
+                <li><strong>Reminders may fail</strong> due to technical issues—have backup systems</li>
+            </ul>
+            <div class="highlight-box">
+                <p>Never change, start, or stop medications without veterinary guidance, regardless of what you read in NurturedPet.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>7. Health Monitoring Disclaimer</h2>
+            <p>Health monitoring features (like sleeping respiratory rate tracking) are intended to help you observe your pet over time. However:</p>
+            <ul>
+                <li>These tools are <strong>not diagnostic devices</strong></li>
+                <li>Results should be <strong>shared with your veterinarian</strong> for interpretation</li>
+                <li>Normal ranges may vary by species, breed, age, and individual animal</li>
+                <li>Changes in metrics do not automatically indicate a problem (or lack of one)</li>
+                <li>Only a veterinarian can determine the clinical significance of any reading</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>8. No Liability for Pet Health Outcomes</h2>
+            <p>NurturedPet, its creators, employees, and affiliates are <strong>not liable</strong> for:</p>
+            <ul>
+                <li>Any pet health outcomes, including illness, injury, or death</li>
+                <li>Decisions you make based on App information</li>
+                <li>Delayed veterinary care resulting from App use</li>
+                <li>Medication errors, even if the App was used to track doses</li>
+                <li>Inaccurate, incomplete, or outdated information in the App or AI responses</li>
+                <li>Technical failures that affect reminders or data storage</li>
+            </ul>
+            <p>By using NurturedPet, you accept full responsibility for your pet's care and agree that we are not liable for any outcomes related to that care.</p>
+        </section>
+        
+        <section>
+            <h2>9. Questions?</h2>
+            <p>If you have questions about this Medical Disclaimer or how NurturedPet should be used:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:support@nurturedpet.com" class="contact-link">support@nurturedpet.com</a></li>
+                <li><strong>Privacy/Legal:</strong> <a href="mailto:legal@nurturedpet.com" class="contact-link">legal@nurturedpet.com</a></li>
+            </ul>
+            <p>For questions about your pet's health, please contact your veterinarian.</p>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p class="logo">🐾 NurturedPet</p>
+        <p>Built with love for Ace &amp; Queen</p>
+        <p>© 2026 NurturedPet. All rights reserved.</p>
+    </footer>
+</body>
+</html>
