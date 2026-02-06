@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — NurturedPet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --deep-teal: #0D4F4F;
+            --ocean-teal: #1A7A7A;
+            --sunset-coral: #E8927C;
+            --warm-peach: #F5B895;
+            --cream-bg: #FFF9F5;
+            --text-dark: #2D2D2D;
+            --text-muted: #666666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--cream-bg);
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+
+        .topbar {
+            background: #0a3d3d;
+            padding: 10px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .topbar a {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.85rem;
+            font-weight: 400;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .topbar a:hover {
+            color: white;
+        }
+
+        .topbar .beta-btn {
+            background: var(--sunset-coral);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.82rem;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .topbar .beta-btn:hover {
+            background: #d4795e;
+            transform: translateY(-1px);
+            color: white;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--deep-teal) 0%, var(--ocean-teal) 100%);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            color: white;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 24px 60px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--deep-teal);
+            font-size: 1.5rem;
+            margin: 36px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--warm-peach);
+        }
+
+        h3 {
+            font-family: 'Source Sans 3', sans-serif;
+            color: var(--ocean-teal);
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 24px 0 10px;
+        }
+
+        p {
+            margin-bottom: 14px;
+            font-size: 1.05rem;
+        }
+
+        a {
+            color: var(--ocean-teal);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: var(--sunset-coral);
+            text-decoration: underline;
+        }
+
+        .contact-card {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 24px 0;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .contact-card h3 {
+            margin-top: 0;
+            color: var(--deep-teal);
+            font-size: 1.2rem;
+        }
+
+        .contact-card .email-link {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--deep-teal), var(--ocean-teal));
+            color: white;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin-top: 12px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .contact-card .email-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(13, 79, 79, 0.3);
+            text-decoration: none;
+            color: white;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 14px 0;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+        }
+
+        .faq-item strong {
+            color: var(--deep-teal);
+            font-size: 1.05rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .faq-item p {
+            margin-bottom: 0;
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .callout {
+            background: linear-gradient(135deg, rgba(13, 79, 79, 0.05), rgba(26, 122, 122, 0.08));
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 20px 0;
+            border: 1px solid rgba(26, 122, 122, 0.15);
+        }
+
+        .callout p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .links-grid a {
+            background: white;
+            padding: 16px 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+            font-weight: 500;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .links-grid a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            text-decoration: none;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px 20px 40px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer .paw {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+
+        .footer strong {
+            color: var(--deep-teal);
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid rgba(26, 122, 122, 0.15);
+            margin: 32px 0;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            .container {
+                padding: 28px 18px 48px;
+            }
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <a href="https://nurturedpet.com">← nurturedpet.com</a>
+        <div>
+            <a href="https://nurturedpet.app" style="margin-right: 20px;">Our Story</a>
+            <a href="https://nurturedpet.app" class="beta-btn">Join the Beta</a>
+        </div>
+    </div>
+    <div class="header">
+        <h1>Support</h1>
+        <p>We're here for you — just like you're there for your pet.</p>
+    </div>
+
+    <div class="container">
+
+        <h2>Get in Touch</h2>
+
+        <p>Whether you have a question about the app, need help with a feature, or just want to share your pet's story — we'd love to hear from you.</p>
+
+        <div class="contact-card">
+            <h3>📧 Email Us</h3>
+            <p>Our team typically responds within 24 hours. For beta-related feedback, please include your device model and iOS version.</p>
+            <a href="mailto:support@nurturedpet.com" class="email-link">support@nurturedpet.com</a>
+        </div>
+
+        <div class="callout">
+            <p>🕐 <strong>Response Time:</strong> We aim to respond to all inquiries within 24 hours during weekdays. Beta testers receive priority support.</p>
+        </div>
+
+        <hr>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <strong>Is NurturedPet a replacement for veterinary care?</strong>
+            <p>No. NurturedPet is a caregiving tool to help you track medications, monitor health patterns, and stay organized. Always follow your veterinarian's guidance for medical decisions. Our AI Care Companion provides supportive information, not medical advice.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Is my pet's data private?</strong>
+            <p>Absolutely. NurturedPet uses a local-first architecture — your data stays on your device. We don't sell your information, and there's no account required. See our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>How do I report a bug or suggest a feature?</strong>
+            <p>Email us at support@nurturedpet.com with "Bug Report" or "Feature Request" in the subject line. Screenshots or screen recordings are incredibly helpful. Beta testers can also submit feedback with screenshots directly through TestFlight — just tap the arrow icon to send a screenshot and notes straight to our support team.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Can I use NurturedPet for multiple pets?</strong>
+            <p>Yes! NurturedPet supports multiple pet profiles, each with their own medications, health records, and care schedules. There's no limit on the number of pets you can add.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>How do I join the beta?</strong>
+            <p>Visit <a href="https://nurturedpet.app">nurturedpet.app</a> to join our waitlist. Beta access is distributed through Apple TestFlight, and we'll send you an invitation when a spot opens up.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>What devices are supported?</strong>
+            <p>NurturedPet requires an iPhone running iOS 17 or later. iPad support and additional platforms are planned for the future.</p>
+        </div>
+
+        <hr>
+
+        <h2>Helpful Links</h2>
+
+        <div class="links-grid">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="disclaimer.html">Medical Disclaimer</a>
+            <a href="beta.html">Beta Agreement</a>
+        </div>
+
+        <hr>
+
+        <h2>About NurturedPet</h2>
+
+        <p>NurturedPet was built at 4 AM, crushing pills for two dogs — Ace, a 17-year-old Yorkiepoo who taught us what unconditional love looks like, and Queen, our poodle living with heart disease.</p>
+
+        <p>We built this app because we know what it's like to manage complex medication schedules while carrying the emotional weight of caring for a sick pet. Every feature is guided by one question: <em>"Will this make the pet parent feel supported or judged?"</em></p>
+
+        <p>The answer is always supported. 💜</p>
+
+    </div>
+
+    <div class="footer">
+        <div class="paw">🐾</div>
+        <strong>NurturedPet</strong><br>
+        <em>Built with love for Ace & Queen</em><br><br>
+        <a href="https://nurturedpet.com">nurturedpet.com</a> &nbsp;·&nbsp; <a href="https://nurturedpet.app">Our Story</a><br><br>
+        © 2026 NurturedPet. All rights reserved.
+    </div>
+</body>
+</html>
