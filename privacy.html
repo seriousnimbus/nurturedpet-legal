@@ -56,8 +56,15 @@
         }
         
         .header .last-updated {
-            font-size: 0.95rem;
-            opacity: 0.9;
+            display: inline-block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            opacity: 1;
+            background: rgba(255,255,255,0.18);
+            padding: 0.2rem 0.85rem;
+            border-radius: 20px;
+            margin-top: 0.5rem;
+            letter-spacing: 0.01em;
         }
         
         .container {
@@ -217,7 +224,7 @@
     <header class="header">
         <span class="emoji">🐾</span>
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: January 11, 2026</p>
+        <p class="last-updated">Last Updated: March 4, 2026</p>
     </header>
     
     <main class="container">
@@ -267,6 +274,11 @@
                         <td>Record keeping and Care Passport sharing</td>
                     </tr>
                     <tr>
+                        <td><strong>Caregiver Wellness Data</strong></td>
+                        <td>Self-reported mood check-ins, free-text journal entries, caregiver wellbeing observations</td>
+                        <td>Power the Care Companion emotional support features; detect sustained distress patterns to surface appropriate resources. Stored locally on your device only — never transmitted to our servers.</td>
+                    </tr>
+                    <tr>
                         <td><strong>User Preferences</strong></td>
                         <td>Notification settings, app preferences, accessibility options</td>
                         <td>Customize your experience</td>
@@ -310,7 +322,29 @@
                 <p><strong>⚠️ Important:</strong> AI responses are informational only and not a substitute for professional veterinary care. See our Medical Disclaimer for details.</p>
             </div>
             
-            <h3>3.2 Other Third-Party Services</h3>
+            <h3>3.2 Caregiver Wellness Features &amp; Crisis Detection</h3>
+            <p>NurturedPet includes a Care Companion check-in feature that periodically asks how you are doing as a caregiver. This feature includes a safety system that monitors free-text journal entries and check-in mood patterns for signals that may indicate emotional distress.</p>
+            
+            <p><strong>How it works:</strong></p>
+            <ul>
+                <li>Free-text entries in the Care Companion check-in are scanned <strong>locally on your device</strong> for words or phrases that may indicate significant emotional distress</li>
+                <li>This scanning happens entirely on-device — your free-text entries are <strong>never sent to any server for crisis analysis</strong></li>
+                <li>If concerning language is detected, the app surfaces a card with free, confidential support resources (988 Suicide &amp; Crisis Lifeline, Crisis Text Line, pet loss support hotlines)</li>
+                <li>If you complete 3 or more consecutive check-ins reporting significant distress, a similar resource card is gently surfaced at your next check-in</li>
+            </ul>
+            
+            <div class="highlight-box important">
+                <p><strong>What this feature is not:</strong> This is not a mental health diagnostic tool, clinical assessment, or crisis service. NurturedPet is not a mental health provider. The app cannot contact emergency services on your behalf. If you are in crisis, please contact the 988 Suicide &amp; Crisis Lifeline directly by calling or texting <strong>988</strong>, or text HOME to <strong>741741</strong> for the Crisis Text Line.</p>
+            </div>
+            
+            <p><strong>Your caregiver wellness data:</strong></p>
+            <ul>
+                <li>All mood check-in data and journal entries are stored <strong>locally on your device only</strong></li>
+                <li>This data is never transmitted to our servers, shared with third parties, or used for any purpose other than powering your in-app experience</li>
+                <li>You can delete all caregiver check-in data at any time in <strong>Settings &gt; Delete All Data</strong></li>
+            </ul>
+
+            <h3>3.3 Other Third-Party Services</h3>
             <table class="data-table">
                 <thead>
                     <tr>
@@ -475,7 +509,7 @@
             <h2>📬 11. Contact Us</h2>
             <p>If you have questions about this Privacy Policy or our practices, we'd love to hear from you:</p>
             <ul>
-                <li><strong>Email:</strong> <a href="mailto:privacy@nurturedpet.com" class="contact-link">privacy@nurturedpet.com</a></li>
+                <li><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#0272706b7463617b426c777076777067667267762c616d6f" class="contact-link"><span class="__cf_email__" data-cfemail="5b2b29322d3a38221b352e292f2e293e3f2b3e2f75383436">[email&#160;protected]</span></a></li>
                 <li><strong>Website:</strong> <a href="https://nurturedpet.com/contact" class="contact-link">nurturedpet.com/contact</a></li>
             </ul>
             <p>We aim to respond to all privacy inquiries within 30 days.</p>
@@ -483,9 +517,9 @@
     </main>
     
     <footer class="footer">
-        <p class="logo">🐾 NurturedPet</p>
+        <p class="logo">🐾 NurturedPet
         <p>Built with love for Ace &amp; Queen</p>
-        <p>© 2026 NurturedPet. All rights reserved.</p>
+        <p style="font-size:0.85rem; margin-top:0.5rem;">© 2026 NurturedPet. All rights reserved.</p>
     </footer>
 </body>
 </html>
