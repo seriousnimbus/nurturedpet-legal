@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS & Voice Consent — NurturedPet Care Reach</title>
+    <style>
+        :root {
+            --deep-teal: #1A5C6B;
+            --teal: #2A7D8E;
+            --sky-blue: #97D7F1;
+            --amber: #F0A456;
+            --text-primary: #1A2B3C;
+            --text-secondary: #4A5568;
+            --bg: #FAFBFC;
+            --card-bg: #FFFFFF;
+            --border: #E2E8F0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: var(--text-primary);
+            background: var(--bg);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--deep-teal) 0%, var(--teal) 100%);
+            color: white;
+            padding: 40px 24px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 32px 24px 64px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 28px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+
+        .card h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--deep-teal);
+            margin-bottom: 16px;
+        }
+
+        .card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        .card p, .card li {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card ul li {
+            padding-left: 24px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .card ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--teal);
+            font-weight: 700;
+        }
+
+        .opt-in-steps {
+            background: #F0F9FF;
+            border-radius: 10px;
+            padding: 20px 24px;
+            margin: 16px 0;
+            border-left: 4px solid var(--sky-blue);
+        }
+
+        .opt-in-steps ol {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .opt-in-steps li {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .opt-out-box {
+            background: #FFF8F0;
+            border-radius: 10px;
+            padding: 20px 24px;
+            margin: 16px 0;
+            border-left: 4px solid var(--amber);
+        }
+
+        .opt-out-box p {
+            margin-bottom: 8px;
+        }
+
+        .opt-out-box code {
+            background: #FEF3E2;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px 16px;
+            font-size: 14px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: #F7FAFC;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 32px 24px;
+            border-top: 1px solid var(--border);
+            margin-top: 16px;
+        }
+
+        .footer p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+
+        .footer a {
+            color: var(--teal);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .last-updated {
+            font-size: 13px;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>🐾 NurturedPet Care Reach</h1>
+        <p>SMS & Voice Communications Consent</p>
+    </div>
+
+    <div class="container">
+
+        <p class="last-updated">Last Updated: March 14, 2026</p>
+
+        <!-- What is Care Reach -->
+        <div class="card">
+            <h2>What is Care Reach?</h2>
+            <p>Care Reach is NurturedPet's optional SMS and voice call feature that helps you stay on top of your pet's medication schedule. When enabled, you may receive:</p>
+            <ul>
+                <li>Medication reminders when doses are due or overdue</li>
+                <li>Wellness check-in messages</li>
+                <li>Milestone celebrations (e.g., dose streaks, care anniversaries)</li>
+                <li>Voice phone calls for critical medication reminders</li>
+            </ul>
+            <p>Care Reach is a premium feature of the NurturedPet iOS app. Messages are transactional and directly related to your pet's care — we never send marketing or promotional messages.</p>
+        </div>
+
+        <!-- How You Opt In -->
+        <div class="card">
+            <h2>How You Opt In</h2>
+            <p>SMS and voice communications are <strong>opt-in only</strong>. You will never receive messages unless you explicitly enable Care Reach within the NurturedPet app.</p>
+
+            <div class="opt-in-steps">
+                <h3>Opt-In Process</h3>
+                <ol>
+                    <li>Open the NurturedPet app on your iPhone</li>
+                    <li>Navigate to <strong>Settings → Notifications → Care Reach</strong></li>
+                    <li>Select your preferred notification intensity level (which includes Care Reach)</li>
+                    <li>Enter and verify your mobile phone number</li>
+                    <li>Confirm your consent to receive SMS and/or voice calls</li>
+                </ol>
+            </div>
+
+            <p>By completing this process, you consent to receive transactional SMS messages and voice calls from NurturedPet at the phone number you provide. You may revoke this consent at any time.</p>
+        </div>
+
+        <!-- Message Details -->
+        <div class="card">
+            <h2>Message Details</h2>
+            <table>
+                <tr>
+                    <th>Detail</th>
+                    <th>Information</th>
+                </tr>
+                <tr>
+                    <td>Message Types</td>
+                    <td>Medication reminders, wellness check-ins, milestone celebrations</td>
+                </tr>
+                <tr>
+                    <td>Estimated Frequency</td>
+                    <td>1–4 messages per day depending on your pet's medication schedule</td>
+                </tr>
+                <tr>
+                    <td>Sending Number</td>
+                    <td>+1 (855) 924-4340 (toll-free)</td>
+                </tr>
+                <tr>
+                    <td>Message & Data Rates</td>
+                    <td>Standard message and data rates may apply per your carrier</td>
+                </tr>
+                <tr>
+                    <td>Carrier Support</td>
+                    <td>All major US carriers supported</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Sample Messages -->
+        <div class="card">
+            <h2>Sample Messages</h2>
+            <p>Here are examples of messages you may receive:</p>
+            <table>
+                <tr>
+                    <th>Type</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td>Medication Reminder</td>
+                    <td>"Hi! It's time for Queen's evening Vetmedin. You've got this. 💜🐾 — NurturedPet"</td>
+                </tr>
+                <tr>
+                    <td>Wellness Check-In</td>
+                    <td>"Good morning! How is Queen doing today? Reply 1 (Great), 2 (Okay), or 3 (Not great). 💜🐾 — NurturedPet"</td>
+                </tr>
+                <tr>
+                    <td>Milestone</td>
+                    <td>"Amazing! You've given Queen 30 days of consistent care. That dedication matters. 💜🐾 — NurturedPet"</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- How to Opt Out -->
+        <div class="card">
+            <h2>How to Opt Out</h2>
+            <p>You can stop receiving messages at any time using either method:</p>
+
+            <div class="opt-out-box">
+                <p><strong>Reply STOP:</strong> Text <code>STOP</code> to +1 (855) 924-4340 at any time. You will receive a confirmation message and no further SMS messages will be sent.</p>
+                <p><strong>In-App:</strong> Open NurturedPet → Settings → Notifications → disable Care Reach. This immediately stops all SMS and voice communications.</p>
+            </div>
+
+            <p>To resume messages after opting out, text <code>START</code> to +1 (855) 924-4340 or re-enable Care Reach in the app.</p>
+            <p>For help, text <code>HELP</code> to +1 (855) 924-4340 or email <a href="mailto:support@nurturedpet.com" style="color: var(--teal);">support@nurturedpet.com</a>.</p>
+        </div>
+
+        <!-- Privacy & Data -->
+        <div class="card">
+            <h2>Privacy & Data Handling</h2>
+            <ul>
+                <li>Your phone number is stored locally on your device and transmitted to our server only when sending a message</li>
+                <li>Phone numbers are never sold, shared with third parties, or used for marketing</li>
+                <li>SMS delivery is powered by <a href="https://www.twilio.com" style="color: var(--teal);" target="_blank">Twilio</a>, which processes your phone number solely for message delivery</li>
+                <li>Message logs are retained for up to 30 days for delivery verification, then deleted</li>
+                <li>All communications are encrypted in transit via TLS/HTTPS</li>
+            </ul>
+            <p>For full details, see our <a href="privacy.html" style="color: var(--teal);">Privacy Policy</a>.</p>
+        </div>
+
+        <!-- Contact -->
+        <div class="card">
+            <h2>Questions?</h2>
+            <p>If you have questions about Care Reach or this consent policy:</p>
+            <ul>
+                <li>Email: <a href="mailto:support@nurturedpet.com" style="color: var(--teal);">support@nurturedpet.com</a></li>
+                <li>Text HELP to +1 (855) 924-4340</li>
+                <li>Visit: <a href="https://www.nurturedpet.com" style="color: var(--teal);" target="_blank">nurturedpet.com</a></li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>🐾 <strong>NurturedPet</strong></p>
+            <p>Built with love for Ace & Queen</p>
+            <p>© 2026 The Caffeinated Poodle Company LLC. All rights reserved.</p>
+            <p style="margin-top: 12px;">
+                <a href="privacy.html">Privacy Policy</a> · 
+                <a href="terms.html">Terms of Service</a> · 
+                <a href="disclaimer.html">Medical Disclaimer</a>
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
