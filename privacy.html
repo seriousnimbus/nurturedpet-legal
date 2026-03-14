@@ -224,7 +224,7 @@
     <header class="header">
         <span class="emoji">🐾</span>
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: March 4, 2026</p>
+        <p class="last-updated">Last Updated: March 14, 2026</p>
     </header>
     
     <main class="container">
@@ -305,10 +305,22 @@
                 <li><strong>Voice recordings are never stored</strong> — they are processed in real-time and immediately discarded</li>
                 <li>Transcribed text may be sent to our AI service to generate responses, then cleared from memory</li>
             </ul>
+
+            <h3>2.4 Phone Number &amp; SMS/Voice Data (Care Reach)</h3>
+            <p>If you enable our optional Care Reach feature for SMS medication reminders and voice calls:</p>
+            <ul>
+                <li><strong>Phone Number:</strong> Your mobile phone number is stored locally on your device and transmitted to our server only when initiating an SMS or voice call. We do not store your phone number permanently on our servers.</li>
+                <li><strong>SMS Messages:</strong> Message content is generated based on your pet's medication schedule and wellness data. Message delivery logs are retained by our delivery provider (Twilio) for up to 30 days for delivery verification, then deleted.</li>
+                <li><strong>Voice Calls:</strong> Care Reach voice calls deliver pre-generated audio medication reminders. Keypad responses (e.g., pressing 1 to confirm a dose) are processed in real-time and stored temporarily to sync with the app. Call recordings are not made.</li>
+                <li><strong>Opt-In Required:</strong> SMS and voice communications are opt-in only. You must explicitly enable Care Reach and register your phone number within the app before any messages or calls are sent.</li>
+                <li><strong>Opt-Out:</strong> You can stop all SMS messages at any time by replying STOP to any message, or by disabling Care Reach in the app's Settings. Voice calls can be disabled in the app's Settings.</li>
+                <li><strong>No Marketing:</strong> We never use your phone number for marketing, promotional messages, or any purpose other than the pet care communications you have opted into.</li>
+            </ul>
+            <p>For full details on how Care Reach communications work, see our <a href="sms-consent.html" class="contact-link">SMS &amp; Voice Consent</a> page.</p>
         </section>
         
         <section>
-            <h2>🤖 3. AI Care Companion & Third-Party Services</h2>
+            <h2>🤖 3. AI Care Companion &amp; Third-Party Services</h2>
             
             <h3>3.1 AI-Powered Features</h3>
             <p>NurturedPet includes an AI Care Companion powered by Anthropic's Claude API. When you interact with the AI:</p>
@@ -369,6 +381,16 @@
                         <td>App distribution, crash reports</td>
                         <td>Anonymous crash data, device info</td>
                     </tr>
+                    <tr>
+                        <td>Twilio (SMS &amp; Voice)</td>
+                        <td>SMS medication reminders and voice call delivery via Care Reach</td>
+                        <td>Phone number (for delivery only), message content</td>
+                    </tr>
+                    <tr>
+                        <td>Upstash (Redis / QStash)</td>
+                        <td>Scheduled message delivery and temporary dose confirmation storage</td>
+                        <td>Medication schedule timing, dose confirmation status</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
@@ -410,6 +432,7 @@
                 <li><strong>Provide Core Services:</strong> Medication tracking, reminders, scheduling, and health monitoring</li>
                 <li><strong>Power AI Features:</strong> Generate personalized insights and responses through the Care Companion</li>
                 <li><strong>Send Notifications:</strong> Medication reminders, check-ins, and (optionally) encouragement messages</li>
+                <li><strong>Send SMS &amp; Voice Reminders:</strong> If you opt into Care Reach, deliver medication reminders and wellness check-ins via text message and phone call</li>
                 <li><strong>Improve the App:</strong> Analyze anonymous usage patterns to enhance features and fix bugs</li>
                 <li><strong>Provide Support:</strong> Respond to your questions and help resolve issues</li>
             </ul>
@@ -452,14 +475,17 @@
                 <li><strong>Export:</strong> Generate reports and exports of your data</li>
             </ul>
             
-            <h3>7.2 Notification Preferences</h3>
+            <h3>7.2 Notification &amp; Communication Preferences</h3>
             <p>You can customize or disable:</p>
             <ul>
                 <li>Medication reminder notifications</li>
                 <li>Check-in prompts</li>
                 <li>Encouragement messages</li>
                 <li>All push notifications (via iOS Settings)</li>
+                <li><strong>SMS medication reminders</strong> (via Care Reach settings in the app, or reply STOP to any message)</li>
+                <li><strong>Voice call reminders</strong> (via Care Reach settings in the app)</li>
             </ul>
+            <p>For SMS communications specifically: text <strong>STOP</strong> to +1 (855) 924-4340 to immediately stop all text messages. Text <strong>HELP</strong> for assistance. Standard message and data rates may apply.</p>
             
             <h3>7.3 Data Deletion</h3>
             <p>To delete all your data:</p>
@@ -509,7 +535,7 @@
             <h2>📬 11. Contact Us</h2>
             <p>If you have questions about this Privacy Policy or our practices, we'd love to hear from you:</p>
             <ul>
-                <li><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#0272706b7463617b426c777076777067667267762c616d6f" class="contact-link"><span class="__cf_email__" data-cfemail="5b2b29322d3a38221b352e292f2e293e3f2b3e2f75383436">[email&#160;protected]</span></a></li>
+                <li><strong>Email:</strong> <a href="mailto:privacy@nurturedpet.com" class="contact-link">privacy@nurturedpet.com</a></li>
                 <li><strong>Website:</strong> <a href="https://nurturedpet.com/contact" class="contact-link">nurturedpet.com/contact</a></li>
             </ul>
             <p>We aim to respond to all privacy inquiries within 30 days.</p>
@@ -517,7 +543,7 @@
     </main>
     
     <footer class="footer">
-        <p class="logo">🐾 NurturedPet
+        <p class="logo">🐾 NurturedPet</p>
         <p>Built with love for Ace &amp; Queen</p>
         <p style="font-size:0.85rem; margin-top:0.5rem;">© 2026 NurturedPet. All rights reserved.</p>
     </footer>
