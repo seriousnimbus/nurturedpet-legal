@@ -224,7 +224,7 @@
     <header class="header">
         <span class="emoji">🐾</span>
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: March 14, 2026</p>
+        <p class="last-updated">Last Updated: September 5, 2026</p>
     </header>
     
     <main class="container">
@@ -265,7 +265,7 @@
                     </tr>
                     <tr>
                         <td><strong>Health Logs</strong></td>
-                        <td>Sleeping respiratory rate (SRR), wellness assessments, digestive tracking, notes</td>
+                        <td>Sleeping respiratory rate (SRR), wellness assessments, digestive tracking, symptom journal entries, notes</td>
                         <td>Health monitoring and pattern detection</td>
                     </tr>
                     <tr>
@@ -276,7 +276,17 @@
                     <tr>
                         <td><strong>Caregiver Wellness Data</strong></td>
                         <td>Self-reported mood check-ins, free-text journal entries, caregiver wellbeing observations</td>
-                        <td>Power the Care Companion emotional support features; detect sustained distress patterns to surface appropriate resources. Stored locally on your device only — never transmitted to our servers.</td>
+                        <td>Power the Care Companion emotional support features; detect sustained distress patterns to surface appropriate resources. Mood check-ins and journal reflections are stored on your device, and crisis scanning happens entirely on-device. Content you choose to share in Care Companion conversations is sent to our AI service to generate a response (see Section 3).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Account Information</strong></td>
+                        <td>Name and email address from Sign in with Apple (Apple's private relay email is supported)</td>
+                        <td>Create your NurturedPet account for sync, backup, and Care Circle sharing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Care Circle Data</strong></td>
+                        <td>Household membership, caregiver names, invitations you send or accept</td>
+                        <td>Share pet care with the caregivers you invite</td>
                     </tr>
                     <tr>
                         <td><strong>User Preferences</strong></td>
@@ -328,6 +338,8 @@
                 <li><strong>What We Send:</strong> Your pet's name, species, breed, health conditions, current medications, and the context of your conversation</li>
                 <li><strong>Why:</strong> To provide personalized, compassionate guidance about your pet's care</li>
                 <li><strong>Data Retention:</strong> Anthropic does not use your data to train their models and does not retain it beyond processing your request</li>
+                <li><strong>How It Travels:</strong> AI requests are routed through our secure backend to Anthropic. Conversation history may be stored with your account so your companion can remember context across sessions</li>
+                <li><strong>Spoken Replies:</strong> If you use voice features, the companion's reply text is sent to OpenAI to synthesize the audio you hear. OpenAI receives only the text being spoken, not your pet's records</li>
             </ul>
             
             <div class="highlight-box important">
@@ -382,6 +394,21 @@
                         <td>Anonymous crash data, device info</td>
                     </tr>
                     <tr>
+                        <td>Supabase</td>
+                        <td>Cloud database for your account and synced pet care data</td>
+                        <td>Account information and the synced records described in Section 4.2</td>
+                    </tr>
+                    <tr>
+                        <td>Vercel</td>
+                        <td>Hosts the secure backend that routes AI and communication requests</td>
+                        <td>Request content in transit only</td>
+                    </tr>
+                    <tr>
+                        <td>OpenAI</td>
+                        <td>Voice synthesis for spoken companion replies</td>
+                        <td>The reply text being spoken</td>
+                    </tr>
+                    <tr>
                         <td>Twilio (SMS &amp; Voice)</td>
                         <td>SMS medication reminders and voice call delivery via Care Reach</td>
                         <td>Phone number (for delivery only), message content</td>
@@ -401,18 +428,17 @@
             <h3>4.1 Local-First Architecture</h3>
             <p>NurturedPet is designed with privacy at its core:</p>
             <ul>
-                <li><strong>Primary Storage:</strong> All your data is stored locally on your device using Apple's SwiftData framework</li>
-                <li><strong>No Account Required:</strong> You can use NurturedPet without creating an account or providing personal identifying information</li>
-                <li><strong>You Control Your Data:</strong> Your pet care data never leaves your device unless you explicitly choose to sync or share it</li>
+                <li><strong>Primary Storage:</strong> Your data lives locally on your device using Apple's SwiftData framework, and the App keeps working offline</li>
+                <li><strong>Your NurturedPet Account:</strong> The App uses Sign in with Apple to create your account. Apple shares your name and email address with us (you may choose Apple's private relay email). We use your account only to operate sync, backup, and Care Circle features</li>
+                <li><strong>You Control Your Data:</strong> Caregiver wellness check-ins and journal reflections stay on your device. Pet care records sync to your account as described below, and nothing is shared with other people unless you invite them</li>
             </ul>
             
-            <h3>4.2 Optional iCloud Sync</h3>
-            <p>If you enable iCloud sync:</p>
+            <h3>4.2 Cloud Sync &amp; Care Circle</h3>
+            <p>To keep your care records consistent across your devices and shared with the caregivers you invite, your pet care data (pets, medications, dose history, health journal entries, vaccination records, and Care Circle membership) syncs to our secure cloud database, hosted by Supabase:</p>
             <ul>
-                <li>Your data is encrypted and stored in your personal iCloud account</li>
-                <li>We cannot access your iCloud data — it belongs to you</li>
-                <li>Sync can be disabled at any time in Settings</li>
-                <li>Disabling sync does not delete your local data</li>
+                <li>Data is encrypted in transit (TLS) and at rest</li>
+                <li>Access controls ensure that only you and the Care Circle members you invite can read your household's records</li>
+                <li>Your local copy remains on your device, and the App reconciles changes when you reconnect</li>
             </ul>
             
             <h3>4.3 Data Security</h3>
@@ -451,6 +477,7 @@
                 <li><strong>Care Passport:</strong> Generate shareable cards for groomers, boarding facilities, pet sitters, or veterinarians</li>
                 <li><strong>Export Features:</strong> Create PDF reports to share with your veterinarian</li>
                 <li><strong>Screenshots/Exports:</strong> Any sharing you initiate through iOS share sheets</li>
+                <li><strong>Care Circle:</strong> If you invite caregivers to your household, they can see your shared pets' care records, including doses logged and health journal entries with the name of the caregiver who logged them. Invite only people you trust</li>
             </ul>
             <p>We do not share your information without your explicit action.</p>
             
@@ -494,7 +521,7 @@
                 <li>Select "Delete All Data"</li>
                 <li>Confirm your choice</li>
             </ol>
-            <p>This action is immediate and irreversible. If you have iCloud sync enabled, data will also be removed from iCloud.</p>
+            <p>This action is immediate and irreversible on your device. To also delete your account and its synced data from our cloud database, contact us at privacy@nurturedpet.com and we will remove them.</p>
             
             <h3>7.4 California Residents (CCPA)</h3>
             <p>California residents have additional rights under the CCPA:</p>
