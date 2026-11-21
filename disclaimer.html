@@ -68,34 +68,12 @@
             padding: 2.5rem 1.5rem;
         }
         
-        .critical-notice {
-            background: var(--danger-light);
-            border: 2px solid var(--danger-red);
-            border-radius: 16px;
-            padding: 2rem;
-            margin-bottom: 2.5rem;
-            text-align: center;
-        }
-        
-        .critical-notice h2 {
-            font-family: 'Nunito', sans-serif;
-            color: var(--danger-red);
-            font-size: 1.75rem;
-            margin-bottom: 1rem;
-        }
-        
-        .critical-notice p {
-            font-size: 1.15rem;
-            color: var(--text-primary);
-            margin-bottom: 0;
-        }
-        
         section {
             background: var(--bg-white);
             border-radius: 16px;
             padding: 2rem;
             margin-bottom: 1.5rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.06);
             border: 1px solid var(--border-soft);
         }
         
@@ -127,60 +105,6 @@
         
         li {
             margin-bottom: 0.5rem;
-        }
-        
-        .highlight-box {
-            background: linear-gradient(135deg, rgba(13,110,110,0.08) 0%, rgba(155,107,158,0.08) 100%);
-            border-radius: 12px;
-            padding: 1.25rem;
-            margin: 1rem 0;
-            border-left: 4px solid var(--deep-teal);
-        }
-        
-        .highlight-box.warning {
-            background: linear-gradient(135deg, rgba(255,139,126,0.15) 0%, rgba(245,169,98,0.15) 100%);
-            border-left-color: var(--soft-coral);
-        }
-        
-        .highlight-box p {
-            margin-bottom: 0;
-        }
-        
-        .emergency-box {
-            background: linear-gradient(135deg, #C53030 0%, #9B2C2C 100%);
-            border-radius: 16px;
-            padding: 2rem;
-            margin: 2rem 0;
-            color: white;
-            text-align: center;
-        }
-        
-        .emergency-box h3 {
-            color: white;
-            font-size: 1.5rem;
-            margin-top: 0;
-            margin-bottom: 1rem;
-        }
-        
-        .emergency-box p {
-            color: rgba(255,255,255,0.95);
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-        }
-        
-        .emergency-box ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .emergency-box li {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            margin: 0.25rem;
-            color: white;
         }
         
         .do-dont-grid {
@@ -257,10 +181,6 @@
             .header h1 {
                 font-size: 2rem;
             }
-            
-            section, .critical-notice {
-                padding: 1.5rem;
-            }
         }
     </style>
 </head>
@@ -272,11 +192,11 @@
     </header>
     
     <main class="container">
-        <div class="critical-notice">
+        <section>
             <h2>⚠️ Important Notice</h2>
             <p><strong>NurturedPet is NOT a substitute for professional veterinary care.</strong><br>
             Always consult a licensed veterinarian for your pet's health needs.</p>
-        </div>
+        </section>
         
         <section>
             <h2>1. Purpose of NurturedPet</h2>
@@ -288,9 +208,7 @@
                 <li>AI-powered informational guidance</li>
                 <li>Record-keeping and sharing capabilities</li>
             </ul>
-            <div class="highlight-box">
-                <p>These features are intended to <strong>complement</strong> professional veterinary care, not replace it. Think of NurturedPet as a helpful assistant for your pet's care routine—not a veterinarian.</p>
-            </div>
+            <p>These features are intended to <strong>complement</strong> professional veterinary care, not replace it. Think of NurturedPet as a helpful assistant for your pet's care routine, not a veterinarian.</p>
         </section>
         
         <section>
@@ -303,9 +221,7 @@
                 <li><strong>Medication Prescriptions:</strong> We do not prescribe, recommend, or adjust medications or dosages</li>
                 <li><strong>Emergency Medical Care:</strong> The App cannot help in medical emergencies</li>
             </ul>
-            <div class="highlight-box warning">
-                <p><strong>No information in NurturedPet should be interpreted as medical advice.</strong> All health-related information is for general educational purposes only.</p>
-            </div>
+            <p><strong>No information in NurturedPet should be interpreted as medical advice.</strong> All health-related information is for general educational purposes only.</p>
         </section>
         
         <section>
@@ -330,9 +246,7 @@
                 <li>Guarantee accuracy of any medical or health information</li>
             </ul>
             
-            <div class="highlight-box warning">
-                <p><strong>AI responses may be incorrect, incomplete, or outdated.</strong> Always verify health information with a licensed veterinarian.</p>
-            </div>
+            <p><strong>AI responses may be incorrect, incomplete, or outdated.</strong> Always verify health information with a licensed veterinarian.</p>
         </section>
         
         <section>
@@ -382,16 +296,14 @@
                 <li>Has any condition that concerns you</li>
             </ul>
             
-            <div class="emergency-box">
-                <h3>🚨 EMERGENCY SITUATIONS</h3>
-                <p>If your pet is experiencing a medical emergency, <strong>do not use this App</strong>. Instead:</p>
-                <ul>
-                    <li>Call your veterinarian immediately</li>
-                    <li>Contact the nearest emergency animal hospital</li>
-                    <li>Call ASPCA Animal Poison Control: 888-426-4435</li>
-                </ul>
-                <p style="margin-top: 1rem; margin-bottom: 0; font-weight: 600;">Every second counts in an emergency. Act immediately.</p>
-            </div>
+            <h3>Emergency Situations</h3>
+            <p>If your pet is experiencing a medical emergency, <strong>do not use this App</strong>. Instead:</p>
+            <ul>
+                <li>Call your veterinarian immediately</li>
+                <li>Contact the nearest emergency animal hospital</li>
+                <li>Call ASPCA Animal Poison Control: 888-426-4435</li>
+            </ul>
+            <p style="margin-top: 1rem; margin-bottom: 0; font-weight: 600;">Every second counts in an emergency. Act immediately.</p>
         </section>
         
         <section>
@@ -404,9 +316,7 @@
                 <li><strong>Side effect information</strong> may not include all possible reactions</li>
                 <li><strong>Reminders may fail</strong> due to technical issues—have backup systems</li>
             </ul>
-            <div class="highlight-box">
-                <p>Never change, start, or stop medications without veterinary guidance, regardless of what you read in NurturedPet.</p>
-            </div>
+            <p>Never change, start, or stop medications without veterinary guidance, regardless of what you read in NurturedPet.</p>
         </section>
         
         <section>
