@@ -214,7 +214,7 @@
                     <tr>
                         <td><strong>Caregiver Wellness Data</strong></td>
                         <td>Self-reported mood check-ins, free-text journal entries, caregiver wellbeing observations</td>
-                        <td>Power the Care Companion emotional support features; detect sustained distress patterns to surface appropriate resources. Mood check-ins and journal reflections are stored on your device, and crisis scanning happens entirely on-device. Content you choose to share in Care Companion conversations is sent to our AI service to generate a response (see Section 3).</td>
+                        <td>Power the Care Companion emotional support features; detect sustained distress patterns to surface appropriate resources. The words you write in a journal reflection or a check-in are stored on your device, and crisis scanning happens entirely on-device. The mood you pick and the scores you set reach us as categories, and they are linked to your account, where our team can see them (see Section 3.2). Content you choose to share in Care Companion conversations is sent to our AI service to generate a response (see Section 3).</td>
                     </tr>
                     <tr>
                         <td><strong>Account Information</strong></td>
@@ -289,6 +289,7 @@
                 <li><strong>To Run Care Circle:</strong> to show each post to the people you chose, run your circles and feed, and send your account emails.</li>
                 <li><strong>To Make Care Circle and the App Better:</strong> to see what people use and fix what doesn't work.</li>
                 <li><strong>To Support You:</strong> our team uses its own admin tools to look up your account and help when you ask.</li>
+                <li><strong>To Understand Who Is Here:</strong> in those same admin tools, our team can open your account and your pets' pages, to see what kinds of pets are in Care Circle and how people take part, so we can make it better. We mostly look at this as totals across everyone. Section 5 lists what our team can see, and Section 4.3 says who can get in.</li>
                 <li><strong>To Keep the Community Safe:</strong> to review reports, take down posts that break our Terms, and find abuse. An automated check, using an AI model from Anthropic, reads the words of new posts, posts whose words were changed, and new replies, shared with Everyone or a circle (never Just us posts, and never photos). It points our team to posts that may break our rules or where someone may need help, and may suggest a reply. A person decides what happens; the check never posts or removes anything.</li>
             </ul>
             <p><strong>Who can see what you share</strong></p>
@@ -296,7 +297,7 @@
                 <li><strong>Everyone:</strong> anyone on the internet can read the moment, its photo and its replies, signed in or not, and search engines such as Google may list it.</li>
                 <li><strong>This Circle:</strong> only members of that circle. Anyone with an account can join a circle, so think of these posts as shared with a group of people you may not know.</li>
                 <li><strong>Just Us:</strong> only your pet's household.</li>
-                <li><strong>Your Name:</strong> your display name and profile photo appear on what you post with your name. If you choose "Post without my name," other people do not see who posted it, but our systems still know it is yours.</li>
+                <li><strong>Your Name:</strong> your display name and profile photo appear on what you post with your name. If you choose "Post without my name," other people do not see who posted it, but our records still hold that it is yours, and our team can see that in its admin tools (Section 5).</li>
                 <li><strong>Sharing Outward:</strong> if you turn on "Let others share this post" for an Everyone moment, others can share its link, and apps such as iMessage may show a preview with its first words and photo and keep their own copy.</li>
                 <li><strong>Pet Pages:</strong> anyone with the link can open your pet's page, including anyone who sees an Everyone moment that tags your pet, unless you choose "Only my household" on it. The page uses the same link as your pet's Care Passport, so anyone who has one can open the other.</li>
                 <li><strong>Copies:</strong> anyone who can see a post can copy it or take a screenshot.</li>
@@ -338,9 +339,13 @@
             
             <p><strong>Your caregiver wellness data:</strong></p>
             <ul>
-                <li>All mood check-in data and journal entries are stored <strong>locally on your device only</strong></li>
-                <li>This data is never transmitted to our servers, shared with third parties, or used for any purpose other than powering your in-app experience</li>
-                <li>You can delete all caregiver check-in data at any time in <strong>Settings &gt; Delete All Data</strong></li>
+                <li><strong>The words you write stay on your device.</strong> Your journal reflections and anything you type into a check-in are stored on your device only. They are never sent to our servers, and the crisis scan above reads them on your device</li>
+                <li><strong>A few categories do reach our servers,</strong> so we can count how the feature is used: the mood you pick (such as "steady" or "tired"), how you say your pet seemed, the scores you set in a wellness check-in (energy, appetite, mobility and pain), fixed notes you can tick such as "Vet visit today", whether you skipped a check-in, whether you opened the Care Companion, and how long a wellness activity took</li>
+                <li><strong>Those categories travel on a random app code,</strong> made once when the App is installed. It is not your name and not your email address. It is not anonymous either: we keep it alongside the token we use to send notifications to your phone, and the model and version of your device. Which pet a check-in was about does not travel with them</li>
+                <li><strong>Your moods and scores are linked to your NurturedPet account,</strong> so our team can see them beside your name in its own admin tools, for the three reasons in Section 5. Mostly we read them as totals across everyone rather than one person at a time</li>
+                <li><strong>Your journal reflections and your Care Companion conversations are never linked this way,</strong> because we do not keep them at all</li>
+                <li>We never share any of this with third parties, use it for advertising, or use it for any purpose other than running and improving the App</li>
+                <li>You can delete all caregiver check-in data from your device at any time in <strong>Settings &gt; Delete All Data</strong>. The categories already counted stay with us, and they are not tied to your name</li>
             </ul>
 
             <h3>3.3 Other Third-Party Services</h3>
@@ -420,7 +425,7 @@
             <ul>
                 <li><strong>Primary Storage:</strong> Your data lives locally on your device using Apple's SwiftData framework, and the App keeps working offline</li>
                 <li><strong>Your NurturedPet Account:</strong> The App uses Sign in with Apple to create your account. Apple shares your name and email address with us (you may choose Apple's private relay email). On the Care Circle website, you can also sign in with Apple, with Google (which shares your name, email address and profile photo link with us), or with your email address. We use your account only to operate sync, backup, and Care Circle features, including the emails that confirm your account, sign you in and welcome you</li>
-                <li><strong>You Control Your Data:</strong> Caregiver wellness check-ins and journal reflections stay on your device. Pet care records sync to your account as described below, and nothing is shared with other people unless you invite them</li>
+                <li><strong>You Control Your Data:</strong> The words you write in caregiver wellness check-ins and journal reflections stay on your device. The mood you pick travels as a category and is linked to your account (Section 3.2). Pet care records sync to your account as described below, and nothing is shared with other people unless you invite them</li>
             </ul>
             
             <h3>4.2 Cloud Sync &amp; Care Circle</h3>
@@ -436,9 +441,18 @@
             <ul>
                 <li>Local data is protected by iOS device encryption</li>
                 <li>All network communications use TLS/HTTPS encryption</li>
+                <li>Data in our cloud databases is encrypted at rest</li>
                 <li>API keys and sensitive credentials are securely managed</li>
                 <li>We do not store payment information (handled by Apple)</li>
             </ul>
+            <p><strong>Our admin tools.</strong> The admin tools described in Section 5 are a separate website of our own. They are not part of the App or the Care Circle website, and no part of them is open to the public.</p>
+            <ul>
+                <li><strong>Who can get in:</strong> only our team. Nobody outside our team has a way in, and we give no advertiser, partner or outside company access.</li>
+                <li><strong>Signing in:</strong> it takes a password. Every request for information behind that sign-in is refused without it. A sign-in lasts 24 hours, and then has to be done again.</li>
+                <li><strong>Wrong guesses:</strong> ten wrong passwords from one place in an hour shut that place out for a time, and fifty wrong passwords in an hour, wherever they come from, shut the sign-in for everyone until it clears. If the service that counts them cannot answer, the sign-in stays shut rather than opening.</li>
+                <li><strong>What our team cannot see there:</strong> the words of your journal reflections and the words of your Care Companion conversations. We do not hold them, so no admin tool can show them.</li>
+            </ul>
+            <p>No system is perfectly secure. We are a small team, and we keep improving how we protect your information as we grow.</p>
         </section>
         
         <section>
@@ -451,9 +465,37 @@
                 <li><strong>Send SMS &amp; Voice Reminders:</strong> If you opt into Care Reach, deliver medication reminders and wellness check-ins via text message and phone call</li>
                 <li><strong>Improve the App:</strong> Analyze anonymous usage patterns to enhance features and fix bugs</li>
                 <li><strong>Provide Support:</strong> Respond to your questions and help resolve issues</li>
+                <li><strong>Understand Who Uses NurturedPet:</strong> See what kinds of pets and households are here, mostly as totals across everyone, so we can decide what to build next</li>
                 <li><strong>Run Care Circle:</strong> Show your posts to the audience you choose, support you, keep the community safe, and improve Care Circle and the App (see Section 2.6)</li>
             </ul>
-            
+
+            <p><strong>Our team's admin tools.</strong> We keep admin tools of our own, on a separate website that only our team can sign in to (Section 4.3). We use them for three things: to help you when you ask, to keep the Care Circle community safe, and to understand who uses NurturedPet and Care Circle so that we can make them better. Most of what we look at is totals across everyone, such as which species and breeds are here, how old pets are, how many pets a household has, how many medicines a pet is on, and how people sign in. When we do open one account, this is what our team can see.</p>
+
+            <p><strong>In the App:</strong></p>
+            <ul>
+                <li>Your display name, how you signed in, and the email address we hold for you. If you chose Apple's private relay address, that is the address we see, and we can tell it is a relay</li>
+                <li>When you joined, and when you last used the App</li>
+                <li>Your household and who else is in it</li>
+                <li>Each of your pets, with its name, species, breed, age and photo, and which household it belongs to</li>
+                <li>Each pet's medicines: the name, the strength, the schedule, and whether it is still in use</li>
+                <li>Which version and build of the App you are on, and your device model</li>
+                <li>Your check-in moods and your wellness scores, as the paragraph below explains</li>
+            </ul>
+
+            <p><strong>On the Care Circle Website:</strong></p>
+            <ul>
+                <li>Your display name, how you signed in, and the email address we hold for you</li>
+                <li>When you joined, and when you were last active</li>
+                <li>The circles you have joined, and how many moments and replies you have written</li>
+                <li>Your pets' pages, with the same details as in the App. Care Circle does not hold your pets' medicines</li>
+                <li>Any moment or reply you have posted and not deleted, and its words, whichever audience you chose for it, "Just us" included. If you posted without your name, our team can still see that it is yours</li>
+                <li>Posts that people have reported, and posts the automated safety check in Section 2.6 has flagged</li>
+            </ul>
+
+            <p><strong>How you are doing as a caregiver.</strong> Your check-in moods, your wellness scores, how often you open the Care Companion, how long a wellness activity took, and whether a breathing check came out normal or worth watching all reach us on a random app code rather than your name or your email address (Sections 2.1 and 3.2). That code is made once when the App is installed, and we keep it with the token we use to send notifications to your phone, so it points at a phone even though it does not carry your name. Those moods and scores are also linked to your NurturedPet account, so our team can see them beside your name here, for the same three reasons. We read them mostly as totals across everyone rather than one person at a time.</p>
+
+            <p><strong>What our team cannot see at all.</strong> The words you write in a journal reflection, and the words of your Care Companion conversations, are not kept by us, so no admin tool of ours can show them, linked to your name or otherwise. The crisis check that reads your words runs on your device and sends nothing anywhere.</p>
+
             <p><strong>What We Never Do:</strong> We never sell your data. We never use your pet's health information for advertising. We never share identifiable information with third parties for marketing purposes.</p>
         </section>
         
