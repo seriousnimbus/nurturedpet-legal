@@ -5,223 +5,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | NurturedPet</title>
     <meta name="description" content="NurturedPet Privacy Policy - How we handle your pet's care data with compassion and security.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --deep-teal: #0D6E6E;
-            --soft-coral: #FF8B7E;
-            --warm-purple: #9B6B9E;
-            --amber-glow: #F5A962;
-            --text-primary: #2D3748;
-            --text-secondary: #4A5568;
-            --bg-cream: #FDF8F5;
-            --bg-white: #FFFFFF;
-            --border-soft: #E8E0DC;
+            --bg: #f6f5f2;
+            --card: #ffffff;
+            --ink: #1d1d1f;
+            --body: #3a3a3e;
+            --muted: #6b6b70;
+            --line: #e6e4df;
+            --accent: #0d6e6e;
+            color-scheme: light;
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--bg-cream);
-            color: var(--text-primary);
-            line-height: 1.7;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                         "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--body);
             font-size: 16px;
+            line-height: 1.55;
+            -webkit-font-smoothing: antialiased;
         }
-        
-        .header {
-            background: linear-gradient(135deg, var(--deep-teal) 0%, #0A5858 100%);
-            padding: 3rem 1.5rem;
-            text-align: center;
-            color: white;
-        }
-        
-        .header h1 {
-            font-family: 'Nunito', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-        
-        .header .emoji {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            display: block;
-        }
-        
-        .header .last-updated {
-            display: inline-block;
-            font-size: 0.9rem;
-            font-weight: 600;
-            opacity: 1;
-            background: rgba(255,255,255,0.18);
-            padding: 0.2rem 0.85rem;
-            border-radius: 20px;
-            margin-top: 0.5rem;
-            letter-spacing: 0.01em;
-        }
-        
-        .container {
-            max-width: 800px;
+
+        .breadcrumb {
+            max-width: 760px;
             margin: 0 auto;
-            padding: 2.5rem 1.5rem;
+            padding: 22px 20px 0;
+            font-size: 13px;
+            color: var(--muted);
         }
-        
-        .intro-card {
-            background: var(--bg-white);
-            border-radius: 16px;
-            padding: 2rem;
-            margin-bottom: 2.5rem;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.06);
-            border: 1px solid var(--border-soft);
-        }
-        
-        .intro-card p {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-        }
-        
-        .intro-card .heart {
-            color: var(--warm-purple);
-        }
-        
-        section {
-            background: var(--bg-white);
-            border-radius: 16px;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.06);
-            border: 1px solid var(--border-soft);
-        }
-        
-        h2 {
-            font-family: 'Nunito', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--deep-teal);
-            margin-bottom: 1.25rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        h3 {
-            font-family: 'Nunito', sans-serif;
-            font-size: 1.15rem;
+        .breadcrumb a { color: var(--muted); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--accent); text-decoration: underline; }
+        .breadcrumb .sep { padding: 0 7px; color: #b9b7b1; }
+        .breadcrumb .here { color: var(--ink); }
+
+        .header { max-width: 760px; margin: 0 auto; padding: 26px 20px; }
+        .header h1 {
+            font-size: 30px;
+            line-height: 1.2;
             font-weight: 600;
-            color: var(--text-primary);
-            margin: 1.5rem 0 0.75rem 0;
+            color: var(--ink);
+            letter-spacing: -0.01em;
         }
-        
-        p {
-            margin-bottom: 1rem;
-            color: var(--text-secondary);
+        .header .last-updated {
+            display: block;
+            margin-top: 8px;
+            font-size: 13px;
+            color: var(--muted);
         }
-        
-        ul, ol {
-            margin: 1rem 0 1rem 1.5rem;
-            color: var(--text-secondary);
+
+        .container { max-width: 760px; margin: 0 auto; padding: 0 20px 48px; }
+
+        .intro-card, section, .toc {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 22px 24px;
+            margin-bottom: 18px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
         }
-        
-        li {
-            margin-bottom: 0.5rem;
+        .intro-card p:last-child,
+        section p:last-child,
+        section ul:last-child,
+        section ol:last-child { margin-bottom: 0; }
+
+        h2 {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 16px;
         }
-        
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--ink);
+            margin: 22px 0 9px;
+        }
+        section > h3:first-of-type { margin-top: 0; }
+
+        p { margin-bottom: 13px; }
+        ul, ol { margin: 0 0 13px 20px; }
+        li { margin-bottom: 7px; }
+        li:last-child { margin-bottom: 0; }
+        strong { color: var(--ink); font-weight: 600; }
+
+        a, .contact-link { color: var(--accent); text-decoration: none; }
+        a:hover, .contact-link:hover { text-decoration: underline; }
+
+        .toc h3 {
+            margin: 0 0 12px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+        .toc ol { margin: 0 0 0 20px; columns: 2; column-gap: 28px; }
+        .toc li { margin-bottom: 6px; }
+
         .data-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 1rem 0;
-            font-size: 0.95rem;
+            margin: 14px 0;
+            font-size: 15px;
         }
-        
         .data-table th {
-            background: var(--bg-cream);
-            padding: 0.75rem 1rem;
+            background: var(--bg);
+            padding: 10px 12px;
             text-align: left;
+            font-size: 12px;
             font-weight: 600;
-            color: var(--text-primary);
-            border-bottom: 2px solid var(--deep-teal);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--ink);
+            border-bottom: 1px solid var(--line);
         }
-        
         .data-table td {
-            padding: 0.75rem 1rem;
-            border-bottom: 1px solid var(--border-soft);
+            padding: 11px 12px;
+            border-bottom: 1px solid var(--line);
             vertical-align: top;
         }
-        
-        .data-table tr:last-child td {
-            border-bottom: none;
-        }
-        
+        .data-table tr:last-child td { border-bottom: none; }
+
         .footer {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 8px 20px 56px;
             text-align: center;
-            padding: 3rem 1.5rem;
-            color: var(--text-secondary);
+            color: var(--muted);
+            font-size: 13px;
         }
-        
         .footer .logo {
-            font-family: 'Nunito', sans-serif;
-            font-weight: 700;
-            color: var(--deep-teal);
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .contact-link {
-            color: var(--deep-teal);
-            text-decoration: none;
+            font-size: 14px;
             font-weight: 600;
+            color: var(--ink);
+            margin-bottom: 6px;
         }
-        
-        .contact-link:hover {
-            text-decoration: underline;
-        }
-        
+        .footer p { margin-bottom: 4px; }
+
         @media (max-width: 600px) {
-            .header h1 {
-                font-size: 2rem;
-            }
-            
-            section, .intro-card {
-                padding: 1.5rem;
-            }
-            
-            .data-table {
-                font-size: 0.85rem;
-            }
-            
-            .data-table th, .data-table td {
-                padding: 0.5rem;
-            }
+            .intro-card, section, .toc { padding: 18px; border-radius: 12px; }
+            .header h1 { font-size: 25px; }
+            .toc ol { columns: 1; }
+            .data-table { font-size: 14px; }
+            .data-table th, .data-table td { padding: 9px 8px; }
         }
     </style>
 </head>
 <body>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="https://nurturedpet.com">NurturedPet</a><span class="sep">&rsaquo;</span><span class="here">Privacy Policy</span>
+    </nav>
     <header class="header">
-        <span class="emoji">🐾</span>
         <h1>Privacy Policy</h1>
         <p class="last-updated">Last Updated: November 22, 2026</p>
     </header>
     
     <main class="container">
         <div class="intro-card">
-            <p>At NurturedPet, we believe caring for your pet is hard enough without worrying about your data. This policy explains how we handle your information with the same compassion we put into every part of our app. <span class="heart">💜</span></p>
+            <p>At NurturedPet, we believe caring for your pet is hard enough without worrying about your data. This policy explains how we handle your information with the same compassion we put into every part of our app.</p>
         </div>
         
         <section>
-            <h2>📱 1. Overview</h2>
+            <h2>1. Overview</h2>
             <p>NurturedPet ("we," "us," or "our") provides a pet medication management and wellness tracking application for iOS. This Privacy Policy describes how we collect, use, disclose, and protect information when you use our mobile application ("App"). It also covers our Care Circle community website, carecircle.nurturedpet.app (Sections 2.5 and 2.6). NurturedPet is run by The Caffeinated Poodle Company, LLC.</p>
             <p>By using NurturedPet, you agree to the collection and use of information in accordance with this policy. If you do not agree with our practices, please do not use our App.</p>
         </section>
         
         <section>
-            <h2>🗂️ 2. Information We Collect</h2>
+            <h2>2. Information We Collect</h2>
             
             <h3>2.1 Information You Provide</h3>
             <p>When you use NurturedPet, you may provide us with:</p>
@@ -353,7 +309,7 @@
         </section>
         
         <section>
-            <h2>🤖 3. AI Care Companion &amp; Third-Party Services</h2>
+            <h2>3. AI Care Companion &amp; Third-Party Services</h2>
             
             <h3>3.1 AI-Powered Features</h3>
             <p>NurturedPet includes an AI Care Companion powered by Anthropic's Claude API. When you interact with the AI:</p>
@@ -457,7 +413,7 @@
         </section>
         
         <section>
-            <h2>💾 4. How We Store Your Data</h2>
+            <h2>4. How We Store Your Data</h2>
             
             <h3>4.1 Local-First Architecture</h3>
             <p>NurturedPet is designed with privacy at its core:</p>
@@ -486,7 +442,7 @@
         </section>
         
         <section>
-            <h2>📤 5. How We Use Your Information</h2>
+            <h2>5. How We Use Your Information</h2>
             <p>We use the information we collect to:</p>
             <ul>
                 <li><strong>Provide Core Services:</strong> Medication tracking, reminders, scheduling, and health monitoring</li>
@@ -502,7 +458,7 @@
         </section>
         
         <section>
-            <h2>🤝 6. Information Sharing</h2>
+            <h2>6. Information Sharing</h2>
             
             <h3>6.1 Sharing You Control</h3>
             <p>NurturedPet lets you share your pet's information when <em>you</em> choose:</p>
@@ -526,7 +482,7 @@
         </section>
         
         <section>
-            <h2>🎛️ 7. Your Rights and Choices</h2>
+            <h2>7. Your Rights and Choices</h2>
             
             <h3>7.1 Access and Control</h3>
             <p>You have full control over your data:</p>
@@ -571,12 +527,12 @@
         </section>
         
         <section>
-            <h2>👶 8. Children's Privacy</h2>
+            <h2>8. Children's Privacy</h2>
             <p>NurturedPet is designed for adult pet caregivers. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
         </section>
         
         <section>
-            <h2>🌍 9. International Users</h2>
+            <h2>9. International Users</h2>
             <p>NurturedPet is based in the United States. If you use the App from outside the US:</p>
             <ul>
                 <li>Your data may be transferred to and processed in the United States</li>
@@ -586,7 +542,7 @@
         </section>
         
         <section>
-            <h2>📝 10. Changes to This Policy</h2>
+            <h2>10. Changes to This Policy</h2>
             <p>We may update this Privacy Policy from time to time. When we make changes:</p>
             <ul>
                 <li>We will update the "Last Updated" date at the top</li>
@@ -596,7 +552,7 @@
         </section>
         
         <section>
-            <h2>📬 11. Contact Us</h2>
+            <h2>11. Contact Us</h2>
             <p>If you have questions about this Privacy Policy or our practices, we'd love to hear from you:</p>
             <ul>
                 <li><strong>Email:</strong> <a href="mailto:privacy@nurturedpet.com" class="contact-link">privacy@nurturedpet.com</a></li>
@@ -607,7 +563,7 @@
     </main>
     
     <footer class="footer">
-        <p class="logo">🐾 NurturedPet</p>
+        <p class="logo">NurturedPet</p>
         <p>Built with love for Ace &amp; Queen</p>
         <p style="font-size:0.85rem; margin-top:0.5rem;">© 2026 NurturedPet. All rights reserved.</p>
     </footer>
