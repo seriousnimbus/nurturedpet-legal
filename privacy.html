@@ -223,7 +223,7 @@
                     </tr>
                     <tr>
                         <td><strong>Care Circle Data</strong></td>
-                        <td>Household membership, caregiver names, invitations you send or accept</td>
+                        <td>Household membership, caregiver names, invitations you send or accept, with the first name and mobile number of the person you invite</td>
                         <td>Share pet care with the caregivers you invite</td>
                     </tr>
                     <tr>
@@ -233,6 +233,8 @@
                     </tr>
                 </tbody>
             </table>
+
+            <p><strong>Friends &amp; Family invitations.</strong> When you invite someone to your pet's Friends &amp; Family in the App, you enter their first name and mobile number. When they open the invitation and ask to join, we text that number a one-time code, through Twilio, so that only they can join. We delete the full number as soon as the invitation is used or cancelled, or within about an hour after it expires, 24 hours after you send it. We keep its last four digits with the invitation, and we never use the number for marketing.</p>
             
             <h3>2.2 Information Collected Automatically</h3>
             <p>We may automatically collect certain information when you use the App:</p>
@@ -321,6 +323,7 @@
                 <li><strong>Data Retention:</strong> Anthropic does not use your data to train their models and does not retain it beyond processing your request</li>
                 <li><strong>How It Travels:</strong> AI requests are routed through our secure backend to Anthropic. Conversation history may be stored with your account so your companion can remember context across sessions</li>
                 <li><strong>Spoken Replies:</strong> If you use voice features, the companion's reply text is sent to OpenAI to synthesize the audio you hear. OpenAI receives only the text being spoken, not your pet's records</li>
+                <li><strong>Medicine Labels:</strong> If you scan a medicine label, the App reads it on your device, then sends the text it read, word for word, and any barcode, through our secure backend to Anthropic, whose AI sorts it into fields for you to check. The photo itself is not sent. Label text can include your pet's name, your name, the pharmacy, the prescriber and the prescription number</li>
             </ul>
             
             <p><strong>Important:</strong> AI responses are informational only and not a substitute for professional veterinary care. See our Medical Disclaimer for details.</p>
@@ -334,6 +337,7 @@
                 <li>This scanning happens entirely on-device — your free-text entries are <strong>never sent to any server for crisis analysis</strong></li>
                 <li>If concerning language is detected, the app surfaces a card with free, confidential support resources (988 Suicide &amp; Crisis Lifeline, Crisis Text Line, pet loss support hotlines)</li>
                 <li>If you complete 3 or more consecutive check-ins reporting significant distress, a similar resource card is gently surfaced at your next check-in</li>
+                <li><strong>Our crisis protocol</strong> also covers Care Companion conversations. The App runs the same on-device check on each message you type to the Care Companion. If it finds signs of crisis or significant distress, it shows the same card, with the 988 Suicide &amp; Crisis Lifeline and the Crisis Text Line first, and the Care Companion is instructed to offer a crisis line or a person you trust in its reply</li>
             </ul>
             
             <p><strong>What this feature is not:</strong> This is not a mental health diagnostic tool, clinical assessment, or crisis service. NurturedPet is not a mental health provider. The app cannot contact emergency services on your behalf. If you are in crisis, please contact the 988 Suicide &amp; Crisis Lifeline directly by calling or texting <strong>988</strong>, or text HOME to <strong>741741</strong> for the Crisis Text Line.</p>
@@ -348,7 +352,7 @@
                 <li><strong>Your wellness scores are shown on nobody's page,</strong> and our admin tools do not read them</li>
                 <li><strong>Your journal reflections and your Care Companion conversations are never linked this way,</strong> because we do not keep them at all</li>
                 <li>We never share any of this with third parties, use it for advertising, or use it for any purpose other than running and improving the App</li>
-                <li>You can delete all caregiver check-in data from your device at any time in <strong>Settings &gt; Delete All Data</strong>. The categories already counted stay with us, and they are not tied to your name</li>
+                <li>You can delete all caregiver check-in data from your device at any time in <strong>Settings &gt; Delete All Data</strong>. The categories already counted stay with us; to have them deleted too, email privacy@nurturedpet.com</li>
             </ul>
 
             <h3>3.3 Other Third-Party Services</h3>
@@ -393,7 +397,7 @@
                     </tr>
                     <tr>
                         <td>Twilio (SMS &amp; Voice)</td>
-                        <td>SMS medication reminders and voice call delivery via Care Reach</td>
+                        <td>SMS medication reminders and voice call delivery via Care Reach, and the one-time codes for Friends &amp; Family invitations</td>
                         <td>Phone number (for delivery only), message content</td>
                     </tr>
                     <tr>
@@ -595,6 +599,16 @@
                 <li>Right to opt-out of the sale of personal information (note: we do not sell personal information)</li>
                 <li>Right to non-discrimination for exercising your privacy rights</li>
             </ul>
+
+            <h3 id="washington-health-data">7.5 Washington Residents: Consumer Health Data</h3>
+            <p>Washington's My Health My Data Act gives you rights over consumer health data, information that identifies your own physical or mental health. In NurturedPet, that is information about how you yourself are doing as a caregiver.</p>
+            <ul>
+                <li><strong>What we collect and why:</strong> the check-in moods you pick, such as Tired, Having a hard time or Asked for support, and what you choose to tell the Care Companion about how you are feeling. We use them to run the check-ins and the Care Companion, to show you support resources, to count how the features are used so we can improve them, and, for moods, for the reasons in Section 5 (see Sections 3.1 and 3.2)</li>
+                <li><strong>Where it comes from:</strong> only from you, through the App</li>
+                <li><strong>Who receives it:</strong> we do not sell it, and we do not share it with any affiliate or other company for its own use. The service providers that run the App for us receive it only to do that: Supabase holds our database, Vercel runs our backend, Anthropic receives what the Care Companion needs to reply, which can include what you tell it about how you are feeling, and OpenAI receives the Care Companion's reply text if you hear it spoken</li>
+                <li><strong>Your rights:</strong> you can ask us to confirm whether we collect or share your consumer health data and to give you a copy, with a list of everyone we shared it with and how to contact them; to delete it, including from our service providers and, within six months, from our backups; and to withdraw any consent you gave. Email privacy@nurturedpet.com with "Washington health data" in the subject. We may need to confirm it is you. We answer within 45 days, or tell you within that time why we need 45 days more, and requests are free up to twice a year</li>
+                <li><strong>Appeals:</strong> if we turn down your request, reply with "Appeal" and we will answer in writing within 45 days. If we still say no, you can contact the Washington State Attorney General at <a href="https://www.atg.wa.gov" class="contact-link">www.atg.wa.gov</a></li>
+            </ul>
         </section>
         
         <section>
@@ -627,7 +641,7 @@
             <p>If you have questions about this Privacy Policy or our practices, we'd love to hear from you:</p>
             <ul>
                 <li><strong>Email:</strong> <a href="mailto:privacy@nurturedpet.com" class="contact-link">privacy@nurturedpet.com</a></li>
-                <li><strong>Website:</strong> <a href="https://nurturedpet.com/contact" class="contact-link">nurturedpet.com/contact</a></li>
+                <li><strong>Support:</strong> <a href="https://nurturedpet.app/support" class="contact-link">nurturedpet.app/support</a></li>
             </ul>
             <p>We aim to respond to all privacy inquiries within 30 days.</p>
         </section>
